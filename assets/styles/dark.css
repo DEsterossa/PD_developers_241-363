@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	width: var(--content-width);
 }
 
-.content>.quote {
+.quote {
 	display: flex;
 	position: relative;
 	text-align: center;
@@ -154,11 +154,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 	column-gap: vw;
 }
 
-.content>.quote>* {
+.quote>* {
 	padding: 0px 0px;
 }
 
-.content>.quote>.quote-content {
+.quote-content {
 	float: left;
 	font-family: "Gilroy Light";
 	margin-top: var(--quote-content-horz-margin);
@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	margin-right: var(--quote-content-horz-margin);
 }
 
-.content>.quote>.quote-author {
+.quote-author {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-top: var(--quote-author-vert-padding);
@@ -267,43 +267,51 @@ h1, h2, h3, h4, h5, h6, p, a {
 	border-radius: 20px;
 }
 
-.news>.news-header {
+.news-header {
+	font-size: calc(var(--task-font-size) * 1.2);
 	display: flex;
 	align-items: center;
 	margin: 0px 0px;
 }
 
-.news>.news-header>* {
-	font-size: var(--task-font-size);
+.news-header>* {
 	padding: calc(0.6vh + 0.6vw);
 	margin: 0px 0px;
 }
 
-.news>.news-header>a {
+.news-header>a {
 	padding: calc(0.4vh + 0.1vw);
 	background-color: #0CC;
 	border-radius: 20px;
 	font-family: "Gilroy Light";
+	text-decoration: none;
 }
 
-.news>.news-content {
+.news-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.news-row {
 	background-color: #333;
 	display: table;
 	min-width: 100%;
 }
 
-.news>.news-content>.news-article {
+.news-article {
 	position: relative;
 	display: table-cell;
 	font-size: var(--task-font-size);
 	padding: 1vh 1.6vw;
 }
 
-.news>.news-content>.news-article>h3 {
+.news-article>h3 {
 	font-family: "Gilroy Light";
 }
 
-.news>.news-content>.news-article>h3::after {
+.news-article>h3::after {
 	content: '';
 	display: block;
 	width: 100%;
@@ -313,14 +321,14 @@ h1, h2, h3, h4, h5, h6, p, a {
 	margin-top: 1vh;
 }
 
-.news>.news-content>.news-article>h4 {
+.news-article>h4 {
 	font-family: "Gilroy Light";
 	margin: 0px 0px;
 	padding: 0px 0px;
 	float: right;
 }
 
-.news>.news-content>.news-article-splitter {
+.news-article-splitter {
 	position: absolute;
 	display: table-cell;
 	width: 1px;
@@ -330,10 +338,57 @@ h1, h2, h3, h4, h5, h6, p, a {
 	background-color: #616161;
 }
 
-.news>.nothing {
+.nothing {
 	content: '';
 	width: 100%;
 	height: calc(1vh + 1.5vw);
+}
+
+.news-switcher {
+	display: block;
+	content: '';
+	background-color: #616161;
+	width: 10px;
+	height: calc(110vh + 20vw);
+	margin-left: 1vw;
+	margin-right: 1vw;
+	border-radius: 20px;
+}
+
+.news-switcher-btn {
+	display: block;
+	content: '';
+	background-color: #333;
+	width: 10px;
+	height: 5vh;
+	border-radius: 20px;
+}
+
+.back-btn {
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	background-color: #333;
+	border-radius: 20px;
+	margin-bottom: 2vh;
+	align-items: center;
+	width: 24vw;
+	font-size: var(--task-font-size);
+	transform: translateX(-2vw);
+}
+
+.back-btn>* {
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+.back-btn>img {
+	width: calc(2vw + 1vh);
+	height: calc(2vw + 1vh);
+}
+
+.back-btn>h2 {
+	font-family: "Gilroy Light";
 }
 
 /* no way */
