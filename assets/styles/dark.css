@@ -68,6 +68,24 @@
 	/* task span img */
 	--task-span-img-size: calc(5vw + 5vh);
 	--task-span-img-margin: 5px;
+
+	/* news switcher */
+	--news-switcher-width: 10px;
+	--news-switcher-height: calc(110vh + 20vw);
+	--news-switcher-horz-margin: 1vw;
+	--news-switcher-border-radius: 20px;
+
+	/* news switcher btn */
+	--news-switcher-btn-width: 10px;
+	--news-switcher-btn-height: 5vh;
+	--news-switcher-btn-border-radius: 20px;
+
+	/* back btn */
+	--back-btn-border-radius: 20px;
+	--back-btn-margin-bottom: 2vh;
+	--back-btn-width: 24vw;
+	--back-btn-child-horz-padding: 1vw;
+	--back-btn-img-horz-size: calc(2vw + 1vh);
 }
 
 html, body {
@@ -348,20 +366,20 @@ h1, h2, h3, h4, h5, h6, p, a {
 	display: block;
 	content: '';
 	background-color: #616161;
-	width: 10px;
-	height: calc(110vh + 20vw);
-	margin-left: 1vw;
-	margin-right: 1vw;
-	border-radius: 20px;
+	width: var(--news-switcher-width);
+	height: var(--news-switcher-height);
+	margin-left: var(--news-switcher-horz-margin);
+	margin-right: var(--news-switcher-horz-margin);
+	border-radius: var(--news-switcher-border-radius);
 }
 
 .news-switcher-btn {
 	display: block;
 	content: '';
 	background-color: #333;
-	width: 10px;
-	height: 5vh;
-	border-radius: 20px;
+	width: var(--news-switcher-btn-width);
+	height: var(--news-switcher-btn-height);
+	border-radius: var(--news-switcher-btn-border-radius);
 }
 
 .back-btn {
@@ -369,26 +387,26 @@ h1, h2, h3, h4, h5, h6, p, a {
 	display: flex;
 	flex-direction: row;
 	background-color: #333;
-	border-radius: 20px;
-	margin-bottom: 2vh;
+	border-radius: var(--back-btn-border-radius);
+	margin-bottom: var(--back-btn-margin-bottom);
 	align-items: center;
-	width: 24vw;
+	width: var(--back-btn-width);
 	font-size: var(--task-font-size);
 	transform: translateX(-2vw);
 }
 
 .back-btn>* {
-	padding-left: 1vw;
-	padding-right: 1vw;
+	padding-left: var(--back-btn-child-horz-padding);
+	padding-right: var(--back-btn-child-horz-padding);
 }
 
 .back-btn>img {
-	width: calc(2vw + 1vh);
-	height: calc(2vw + 1vh);
+	width: var(--back-btn-img-horz-size);
+	height: var(--back-btn-img-horz-size);
 }
 
 .back-btn>h2 {
 	font-family: "Gilroy Light";
 }
 
-/* no way */
+/* no way ... */
