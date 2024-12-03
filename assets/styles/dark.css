@@ -98,6 +98,8 @@ html, body {
 	min-height: var(--page-height);
 	min-width: var(--page-width);
 	width: var(--page-width);
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 body {
@@ -420,11 +422,7 @@ footer {
 	background-color: #1a1a1a;
 	width: var(--footer-width);
 	height: var(--footer-height);
-	padding-left: 1vw;
-	padding-right: 1vw;
-	margin-top: 1vw;
-	padding-bottom: 1vw;
-	transform: translateX(-25vw);
+	top: var(--footer-top);
 }
 
 footer>p {

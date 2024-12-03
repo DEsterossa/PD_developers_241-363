@@ -4,11 +4,14 @@
 		<meta charset="UTF-8"/>
 		<title>Точка опоры - Главная - Новости</title>
 		<link rel="stylesheet" type="text/css" href="../styles/dark.css"/>
-
-		<!-- Пока не ясно, надо ли нам удалять страничный (обычный) скроллбар -->
-		<!-- <link rel="stylesheet" type="text/css" href="../styles/remove-vert-scroll.css"/> -->
 	</head>
 	<body>
+		<style>
+			/* Пока не знаю, как обойтись без этого */
+			footer {
+				top: 140vh;
+			}
+		</style>
 		<div class="nav">
 			<h1 class="nav-title">Точка<br/>Опоры</h1>
 			<a class="nav-btn nav-cur-tab" href="#"><img src="../images/main.svg"/><h1>Главная</h1></a>
@@ -123,13 +126,10 @@
 					</div>
 					<div class="nothing"></div>
 				</div>
-				<div class="news-switcher">
-					<div class="news-switcher-btn"></div>
-				</div>
 			</div>
-			<footer>
-				<p>Группа 241-363</p>
-			</footer>
 		</div>
+		<footer>
+			<p>Группа 241-363</p>
+		</footer>
 	</body>
 </html>
