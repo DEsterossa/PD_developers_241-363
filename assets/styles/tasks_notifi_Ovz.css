@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: "Gilroy Extra Bold", Arial, sans-serif;
+    background: linear-gradient(54deg, rgba(0, 255, 204, 1) 0%, rgba(0, 204, 204, 1) 100%) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #2d2d2d;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar .logo {
+    font-size: 36px; /* Увеличен шрифт */
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.sidebar .logo span {
+    display: block;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 35px 0; /* Увеличено расстояние между элементами меню */
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px; /* Увеличен шрифт */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a i {
+    margin-right: 15px;
+    font-size: 26px; /* Увеличены иконки */
+}
+
+.sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.sidebar ul li.active a {
+    background-color: #3c3c3c;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Увеличен отступ сверху */
+}
+
+.create-task {
+    background-color: #2d2d2d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px; /* Увеличен размер кнопки */
+    font-size: 20px; /* Увеличен шрифт кнопки */
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.actions button {
+    margin-left: 10px;
+    background-color: #2d2d2d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px; /* Увеличен размер кнопок */
+    font-size: 20px; /* Увеличен шрифт кнопок */
+    cursor: pointer;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Увеличено вертикальное расстояние между строками задач */
+}
+
+.task-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Увеличено расстояние между задачами в строке */
+}
+
+.task {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px; /* Увеличено расстояние внутри задач */
+    font-size: 18px; /* Увеличен шрифт задач */
+    font-weight: bold; /* Сделан жирным */
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    line-height: 1.6; /* Увеличено межстрочное расстояние внутри текста задач */
+}
