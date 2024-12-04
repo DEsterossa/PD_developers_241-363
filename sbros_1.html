@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Точка опоры - Ввод кода подтверждения</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gilroy:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Gilroy', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #00FFCC, #00CCCC);
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .button {
+ 	    width: 415px;
+	    height: 130px;
+	    font-size: 32px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #333333;
+            color: white;
+            cursor: pointer;
+	    font-weight: bold;
+	    margin: 0 15px;
+        }
+        .google-button {
+            background-color: #333333;
+ 	    width: 130px;
+	    height: 130px;
+        }
+        .panel {
+	    font-family: var(--font-family);
+	    font-weight: bold;
+	    text-align: center;
+	    color: #fff;
+            margin-bottom: 20px;
+            font-size: 53px;
+            align-items: center;
+            justify-content: center;
+        }
+        .instruction {
+	    font-family: var(--font-family);
+	    font-weight: 300;
+	    line-height: 167%;
+	    text-align: center;
+	    color: #fff;
+	    margin-top: 10px;
+            font-size: 24px;
+  	    font-weight: 300;
+            align-items: center;
+            justify-content: center;
+        }
+        .input-container {
+	    margin: 20px 0;
+            display: flex;
+            gap: 5px;
+            color: #f4f4f4;
+            align-items: center;
+            justify-content: center;
+            border: 15px solid #FFFFF;
+        }
+        .input-field {
+	    width: 120px;
+            height: 120px;
+            font-size: 24px;
+            text-align: center;
+	    background-color: #333333;
+            border: 5px solid #FFFFF;
+            border-radius: 20px;
+        }
+        .confirm-button {
+ 	    width: 300px;
+	    height: 75px;
+            padding: 10px 20px;
+            border: none;
+	    font-weight: bold;
+            border-radius: 20px;
+            background-color: #00CCCC;
+            color: white;
+            font-size: 32px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+
+        }
+	.background-panel {
+ 	    width: 1000px;
+	    height: 600px;
+            background-color: #333333;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <button class="button">Вход через почту</button>
+        <button class="button">Регистрация</button>
+        <button class="button google-button"><img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google Icon" style="width: 75px; height: 75px; vertical-align: middle;"></button>
+    </div>
+
+    <div class="background-panel">
+    	<div class="panel">Сброс пароля</div>
+    	<div class="instruction">Введите отправленный вам код.</div>
+
+    	<div class="input-container">
+        	<input type="text" class="input-field" maxlength="1">
+        	<input type="text" class="input-field" maxlength="1">
+        	<input type="text" class="input-field" maxlength="1">
+        	<input type="text" class="input-field" maxlength="1">
+        	<input type="text" class="input-field" maxlength="1">
+        	<input type="text" class="input-field" maxlength="1">
+    	</div>
+
+    	<button class="confirm-button">Подтвердить</button>
+    </div>
+</body>
+</html>
