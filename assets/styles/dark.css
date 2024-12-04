@@ -418,15 +418,83 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 footer {
-	position: absolute;
-	background-color: #1a1a1a;
-	width: var(--footer-width);
-	height: var(--footer-height);
 	top: var(--footer-top);
+	position: absolute;
+	background-color: #111;
+	padding: 0 0;
+	width: 100vw;
+	height: 50%;
+	display: block;
+	row-gap: 1vh;
 }
 
-footer>p {
-	color: #616161;
+.ft-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #333;
+}
+
+.ft-content>* {
+	margin: 0vh 4vw;
+}
+
+.ft-content>h1 {
+	margin-top: 9vh;
+	margin-bottom: 9vh;
+}
+
+.ft-tbl {
+	text-align: center;
+	display: block;
+}
+
+.ft-tbl>h2 {
+	font-family: "Gilroy Light";
+}
+
+.ft-cols {
+	display: flex;
+	flex-direction: row;
+	vertical-align: middle;
+	column-gap: 14vw;
+	transform: translateX(-2vw);
+}
+
+.ft-col {
+	font-size: calc(1vw + 0.7vh);
+	text-align: center;
+}
+
+.ft-col>a {
+	font-family: "Gilroy Light";
+	text-decoration: none;
+}
+
+.ft-col>h2::after {
+	content: '';
+	display: block;
+	background-color: white;
+	height: 1px;
+	transform: scaleX(1.5);
+}
+
+.ft-col>div>a>img {
+	width: calc(2vw + 1vh);
+	height: calc(2vw + 1vh);
+}
+
+.ft-btm {
+	background-color: #111;
+	height: 1vh;
+	align-items: center;
+	vertical-align: center;
+}
+
+.ft-btm>* {
+	padding: 2vh 2vw;
+	font-family: "Gilroy Light";
+	margin: 0px 0px;
 }
 
 /* no way ... */
