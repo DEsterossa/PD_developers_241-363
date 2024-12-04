@@ -272,8 +272,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding-top: 3vh;
-	padding-bottom: 3vh;
+	align-items: center;
+	margin-top: 6vh;
 }
 
 .task-ctrl>img {
