@@ -135,11 +135,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 	position: absolute;
 	left: var(--content-left);
 	top: var(--content-top);
-	margin-top: 44px;
+	margin-top: 4.074vh;
 	margin-bottom: var(--content-vert-margin);
-	margin-left: 39px;
+	margin-left: 2.564vh;
 	width: var(--content-width);
-	height: 1080px;
+	height: 100vh;
 }
 
 .header {
@@ -155,46 +155,46 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .search{
 	justify-content:space-between;
-	width: 633px;
-	height: 82px;
+	width: 32.883vw;
+	height: 7.593vh;
 	background: #333333;
 	z-index: 2;
 	justify-content:space-between;
-	border: 2px solid transparent;
+	border: 0.185vh solid transparent;
 	border-radius: var(--quote-border-radius);
 	position: relative;
 }
 
 .search__text {
 	font-weight: 400;
-	font-size: 32px;
+	font-size: 2.963vh;
 	text-align: center;
 	letter-spacing: 0.02em;
 	color: #fff;
 	font-family: "Gilroy Light"!important;
 	position: absolute;
-	margin: 21px 389px 7px 101px;
+	margin: 2vh 20.208vw 0.648vh 5.247vw;
 }
 
 .search::before{
 	content: "";
 	background-image: url(../images/search.png);
 	background-repeat: no-repeat;
-	width: 47px;
-	height: 47px;
+	width: 2.442vw;
+	height: 4.352vh;
 	position: absolute;
-	top: 18px;
-	left: 10px;
+	top: 1.667vh;
+	left: 0.519vw;
 }
 
 .search__sort {
 	display: flex;
-	width: 82px;
-	height: 82px;
+	width: 4.26vw;
+	height: 7.593vh;
 	background: #616161;
 	z-index: 2;
-	margin: -2px 0 0 553px;
-	border: 2px solid transparent;
+	margin: -0.185vh 0 0 28.727vw;
+	border: 0.185vh solid transparent;
 	border-radius: var(--quote-border-radius);
 }
 
@@ -495,3 +495,83 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 }
 
+footer {
+	top: var(--footer-top);
+	position: absolute;
+	background-color: #111;
+	padding: 0 0;
+	width: 100vw;
+	height: 50%;
+	display: block;
+	row-gap: 1vh;
+	margin: 100vh 0 0 0;
+}
+
+.ft-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #333;
+}
+
+.ft-content>* {
+	margin: 0vh 4vw;
+}
+
+.ft-content>h1 {
+	margin-top: 9vh;
+	margin-bottom: 9vh;
+}
+
+.ft-tbl {
+	text-align: center;
+	display: block;
+}
+
+.ft-tbl>h2 {
+	font-family: "Gilroy Light";
+}
+
+.ft-cols {
+	display: flex;
+	flex-direction: row;
+	vertical-align: middle;
+	column-gap: 14vw;
+	transform: translateX(-2vw);
+}
+
+.ft-col {
+	font-size: calc(1vw + 0.7vh);
+	text-align: center;
+}
+
+.ft-col>a {
+	font-family: "Gilroy Light";
+	text-decoration: none;
+}
+
+.ft-col>h2::after {
+	content: '';
+	display: block;
+	background-color: white;
+	height: 1px;
+	transform: scaleX(1.5);
+}
+
+.ft-col>div>a>img {
+	width: calc(2vw + 1vh);
+	height: calc(2vw + 1vh);
+}
+
+.ft-btm {
+	background-color: #111;
+	height: 1vh;
+	align-items: center;
+	vertical-align: center;
+}
+
+.ft-btm>* {
+	padding: 2vh 2vw;
+	font-family: "Gilroy Light";
+	margin: 0px 0px;
+}
