@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	background-image: url(../images/search.png);
 	background-repeat: no-repeat;
 	width: 2.442vw;
-	height: 4.352vh;
+	height: 2.494vw;;
 	position: absolute;
 	top: 1.667vh;
 	left: 0.519vw;
@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	background-image: url(../images/Filter.png);
 	background-repeat: no-repeat;
 	width: 2.234vw;
-	height: 3.981vh;
+	height: 2.494vw;;
 	position: absolute;
 	margin: 1.852vh 0px 1.852vh 1.039vw;
 }
@@ -224,9 +224,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 	background-image: url(../images/Bell.png);
 	background-repeat: no-repeat;
 	width: 1.87vw;
-	height: 3.333vh;
+	height: 1.87vw;
 	position: absolute;
-	margin: 1.143vh 2.037vw 1.143vh 2.037vw;
+	margin: 1.7vh 1.2vw;
 }
 
 .archive{
@@ -245,9 +245,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 	background-image: url(../images/Archive.png);
 	background-repeat: no-repeat;
 	width: 2.494vw;
-	height: 4.444vh;
+	height: 2.494vw;
 	position: absolute;
-	margin: 0.831vh 1.481vw 0.831vh 1.481vw;
+	margin: 1.3vh 1vw;
 }
 
 .filter{
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	content: "";
 	background-image: url(../images/X.png);
 	background-repeat: no-repeat;
-	height: 4.444vh;
+	height: 2.494vw;
 	width: 2.494vw;
 	position: absolute;
 	margin: 1.296vh 1.143vw 68.889vh 43.584vw;
@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	content: "";
 	background-image: url(../images/Check.png);
 	background-repeat: no-repeat;
-	height: 4.444vh;
+	height: 2.494vw;
 	width: 2.494vw;
 	position: absolute;
 	margin: 67.685vh 1.143vw 2.5vh 43.584vw;
@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	height: 2.494vw;
 	width: 2.494vw;
 	position: absolute;
-	margin: -2vh 0 0 -3.636vw;
+	margin: -1vh 0 0 -3.636vw;
 }
 
 .item3{
