@@ -163,18 +163,46 @@ h1, h2, h3, h4, h5, h6, p, a {
 	border: 2px solid transparent;
 	border-radius: var(--quote-border-radius);
 	position: relative;
-}
+} 
 
-.search__text {
-	font-weight: 400;
-	font-size: 2.963vh;
-	text-align: center;
-	letter-spacing: 0.02em;
-	color: #fff;
-	font-family: "Gilroy Light"!important;
+form {
+	position: relative;
+	width: 32.883vw;
+	height: 7vh;
+	margin: 0;
+  }
+  
+input {
+	width: 32.883vw;
+	height: 6.7vh;
+	padding-left: 5.1948vw;
+	color: white;
+	border: none;
+  	outline: none;
+	background: none;
+  }
+
+button {
+	position: absolute; 
+	top: -0.2vh;
+	right: -0.2vw;
+	width: 4.1558vw;
+	height: 8vh;
+	border: none;
+	background: #616161;
+	border-radius: 15px;
+	cursor: pointer;
+  }
+
+button:before {
+	content: "";
+	background-image: url(../images/Filter.png);
+	background-repeat: no-repeat;
+	width: 2.234vw;
+	height: 2.494vw;;
 	position: absolute;
-	margin: 2vh 20.208vw 0.648vh 5.247vw;
-}
+	margin: -1.852vh 0vw 3.852vh -1vw;
+  }
 
 .search::before{
 	content: "";
@@ -185,6 +213,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 	position: absolute;
 	top: 1.667vh;
 	left: 0.519vw;
+	z-index: 2;
+	cursor:pointer;
 }
 
 .search__sort {
@@ -217,6 +247,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	border: 2px solid transparent;
 	border-radius: var(--quote-border-radius);
 	position: relative;
+	cursor:pointer;
 }
 
 .notifications::before{
@@ -238,6 +269,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	border: 2px solid transparent;
 	border-radius: var(--quote-border-radius);
 	position: relative;
+	cursor:pointer;
 }
 
 .archive::before{
@@ -273,6 +305,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	width: 2.494vw;
 	position: absolute;
 	margin: 1.296vh 1.143vw 68.889vh 43.584vw;
+	cursor:pointer;
 }
 
 .filter_back::after{
@@ -283,6 +316,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	width: 2.494vw;
 	position: absolute;
 	margin: 67.685vh 1.143vw 2.5vh 43.584vw;
+	cursor:pointer;
 }
 
 .container{
@@ -327,10 +361,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 	content: "";
 	background-image: url(../images/Circle.png);
 	background-repeat: no-repeat;
-	height: 2.494vw;
-	width: 2.494vw;
+	height: 150%;
+	width: 150%;
 	position: absolute;
 	margin: -1vh 0 0 -3.636vw;
+	cursor:pointer;
 }
 
 .item3{
@@ -367,6 +402,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	width: 2.494vw;
 	position: absolute;
 	margin: -0.37vh 0 0 -16vw;
+	cursor:pointer;
 }
 
 .item4__process{
@@ -391,6 +427,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	width: 2.494vw;
 	position: absolute;
 	margin: -0.37vh 0 0 -15.4vw;
+	cursor:pointer;
 }
 
 .item5{
@@ -404,6 +441,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	font-size: 3.704vh;
 	letter-spacing: 0.02em;
 	color: #fff;
+	cursor:pointer;
 }
 
 .item6 p::before{
@@ -443,6 +481,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 	font-size: 43.704vh;
 	letter-spacing: 0.02em;
 	color: #fff;	
+	cursor:pointer;
 }
 
 .item8__dot1{
