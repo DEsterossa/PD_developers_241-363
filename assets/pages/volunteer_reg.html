@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="../styles/all_reg_styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="top_bar">
+          <div class="mail">
+            <button class="mail_button">Вход через почту</button>
+          </div>
+          <div class="register">
+            <button class="register_button">Регистрация</button>
+          </div>
+          <div class="google">
+            <button class="google_button">
+              <img class="google_pic" src="../images/Gugl.png" />
+            </button>
+          </div>
+        </div>
+        <div class="reg_window">
+          <div class="reg_window_text">Регистрация волонтера</div>
+          <div class="gos_usl">
+            <div class="use_gos_usl">
+              <img class="gos_usl_img" id="gos_usl_img_id" src="../images/Gosuslugi.png" />
+              <label for="gos_usl_img_id" class="label_gos_usl">Войти через Госуслуги</label>
+            </div>
+            <div class="dots">
+              <img src="../images/more.png" class="dots_png" />
+            </div>
+          </div>
+          <fieldset class="divider2">
+            <legend class="divider_text">или</legend>
+          </fieldset>
+          <div class="first_line">
+            <input class="fio" placeholder="Иванов Иван Иванович" />
+            <input class="gender" placeholder="муж/жен" />
+            <input class="date" type="date" />
+          </div>
+          <div class="second_line">
+            <input class="phone" placeholder="+7(900)000-00-00" />
+            <input class="email" placeholder="example@mail.ru" />
+          </div>
+          <div class="third_line">
+            <input class="password" type="password" placeholder="Введите придуманный пароль" />
+          </div>
+          <div class="policy">
+            <input type="checkbox" id="policy_check" />
+            <label for="policy_check" class="policy_label">
+              Я согласен на
+              <a class="policy_a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+                >обработку персональных данных</a
+              >
+            </label>
+          </div>
+          <div class="next_button_container">
+            <button class="next_button">Зарегистрироваться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

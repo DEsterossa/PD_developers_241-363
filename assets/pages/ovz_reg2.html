@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="../styles/all_reg_styles.css" />
+    <script src="../Js/ovz_reg2_script.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="top_bar">
+          <div class="mail">
+            <button class="mail_button">Вход через почту</button>
+          </div>
+          <div class="register">
+            <button class="register_button">Регистрация</button>
+          </div>
+          <div class="google">
+            <button class="google_button">
+              <img class="google_pic" src="../images/Gugl.png" />
+            </button>
+          </div>
+        </div>
+        <div class="reg_window">
+          <div class="reg_window_text">Регистрация пользователя с ОВЗ</div>
+          <div class="info">
+            <div class="book_container">
+              <img class="book" src="../images/Vector.png" />
+              <label for="book" class="label_book">Что требуется</label>
+            </div>
+            <div class="text3">Необходимо приложить скан-копии справки МСЭ для подтверждения статуса ОВЗ.</div>
+            <div class="text4">Проверка занимает 1-2 дня.</div>
+          </div>
+          <label class="drop_area" for="drop_area1">
+            <img src="../images/Gradient_BG.png" class="folder_pic" />
+            <div class="text1">Нажмите сюда или перетащите файл</div>
+            <div class="text2">Формат: pdf</div>
+            <div class="file_added">Файл успешно загружен</div>
+            <input accept=".pdf" type="file" id="drop_area1" multiple hidden />
+          </label>
+          <div class="register_button_container2">
+            <button class="register_button2">Зарегистрироваться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
