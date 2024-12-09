@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="../styles/all_reg_styles.css" />
+    <script src="../Js/start_reg_script.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="top_bar">
+          <div class="mail">
+            <button class="mail_button">Вход через почту</button>
+          </div>
+          <div class="register">
+            <button class="register_button">Регистрация</button>
+          </div>
+          <div class="google">
+            <button class="google_button">
+              <img class="google_pic" src="../images/Gugl.png" />
+            </button>
+          </div>
+        </div>
+        <div class="reg_window">
+          <div class="reg_window_text">Регистрация</div>
+          <div class="reg_choice">
+            <div class="pics">
+              <label for="o_b"><img class="ovz_pic" src="../images/image_24.png" /></label>
+              <span class="divider"></span>
+              <label for="v_b"><img class="volunteer_pic" src="../images/image_23.png" /></label>
+            </div>
+            <div class="choice_buttons">
+              <input type="radio" name="choice" class="ovz_button" id="o_b" />
+              <label for="o_b" class="ovs_label">Я человек с ОВЗ</label>
+
+              <input type="radio" name="choice" class="volunteer_button" id="v_b" />
+              <label for="v_b" class="volunteer_label">Я волонтер</label>
+            </div>
+          </div>
+          <div class="next_button_container">
+            <button class="next_button">Дальше</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
