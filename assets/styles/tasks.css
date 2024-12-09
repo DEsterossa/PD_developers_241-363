@@ -1,0 +1,118 @@
+.top-bar {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.search-bar {
+    background-color: #333333;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar>input {
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 32px;
+    height: 4vh;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.search-bar>input::placeholder {
+    color: #ffffff;
+}
+
+.search-bar>button {
+    background-color: #616161;
+    border-radius: 10px;
+}
+
+.search-bar>img {
+    font-size: 32px;
+    height: 4vh;
+    width: auto;
+}
+
+.search-bar>button>img {
+    font-size: 32px;
+    height: 3.5vh;
+    width: auto;
+}
+
+.actions {
+    display: flex;
+    gap: 40px;
+}
+
+.actions>.active {
+    background-color: #616161;
+}
+
+.actions>button>img {
+    height: 4vh;
+}
+
+.task-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.task-grid>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-grid>div>button {
+    background-color: #333333;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 10vw;
+    height: 4vh;
+    align-self: center;
+    font-family: "Gilroy Light", sans-serif;
+}
+
+.task-grid>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+.task-grid>div>div>h2 {
+    font-family: "Gilroy Light", sans-serif;
+}
+
+.task-grid>div>div>hr {
+    width: 80%;
+    border: 1px solid #ffffff;
+}
+
+.task-grid>div>div>div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.task-grid>div>div>div>h3 {
+    font-family: "Gilroy Light", sans-serif;
+}
+
+.task-grid>div>div>div>p {
+    font-family: "Gilroy Light", sans-serif;
+}
+
+.task-grid>div>div>div>div>p {
+    font-family: "Gilroy Light", sans-serif;
+}
+
+.task-grid>div>div>div>div>hr {
+    width: 50%;
+    border: 1px solid #ffffff;
+}
