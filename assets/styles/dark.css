@@ -166,6 +166,20 @@ h1, h2, h3, h4, h5, h6, p, a {
 	width: var(--content-width);
 }
 
+.content-ChtProf {
+	background-image: url(../images/bckChtProf.svg);
+	height: 120vh;
+	width: 100vw;
+	background-size: cover;
+}
+
+.bgChat {
+	background-image: url(../images/bgChatMash.svg);
+	height: 80vh;
+	width: 60vw;
+	background-size: cover;
+}
+
 .quote {
 	display: flex;
 	position: relative;
@@ -414,6 +428,28 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .back-btn>h2 {
+	font-family: "Gilroy Light";
+}
+
+.back-btn-chtProf {
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	background-color: #333;
+	border-radius: var(--back-btn-border-radius);
+	margin-bottom: var(--back-btn-margin-bottom);
+	align-items: center;
+	width: 15vw;
+	margin-top: 1%;
+	transform: translateX(-3vw);
+}
+
+.back-btn-chtProf>img {
+	width: 3vw;
+	height: 3vh;
+}
+
+.back-btn-chtProf>h2 {
 	font-family: "Gilroy Light";
 }
 
@@ -682,6 +718,109 @@ footer {
 .chat-empty-content>h2 {
 	font-size: calc(1vw + 0.5vh);
 	font-family: "Gilroy Light";
+}
+
+.upperChtProfBlock {
+	position: absolute;
+	display: block;
+	left: 15vw;  
+	width: 40vw;
+	height: 19vh;
+	background-color: #333;
+	border-radius: var(--back-btn-border-radius);
+}
+
+.centered-imageChtProf {
+	position: absolute;
+	top: -8vh;         
+	left: 50%;
+	transform: translateX(-50%);  
+	height: 100%;
+	width: 100%;
+}
+
+.text-belowChtProfMash {
+	margin-top: 12vh;
+	transform: translateX(45%);   
+}
+
+.text-belowChtProfPash {
+	margin-top: 12vh;
+	transform: translateX(25%);   
+}  
+
+.midChtProfBlockMasha {
+	position: absolute;
+	display: block;
+	left: 15vw;
+	margin-top: 20vh;   
+	width: 40vw;
+	height: 24vh;
+	background-color: #333;
+	border-radius: var(--back-btn-border-radius);
+}
+
+.midChtProfBlockPasha {
+	position: absolute;
+	display: block;
+	left: 15vw;
+	margin-top: 20vh;   
+	width: 40vw;
+	height: 35vh;
+	background-color: #333;
+	border-radius: var(--back-btn-border-radius);
+}
+
+.bottomChtProfBlockMasha {
+	position: absolute;
+	display: block;
+	left: 15vw;
+	margin-top: 45vh;   
+	width: 40vw;
+	height: 29vh;
+	background-color: #333;
+	border-radius: var(--back-btn-border-radius);
+}
+
+.bottomChtProfBlockPasha {
+	position: absolute;
+	display: block;
+	left: 15vw;
+	margin-top: 56vh;   
+	width: 40vw;
+	height: 29vh;
+	background-color: #333;
+	border-radius: var(--back-btn-border-radius);
+}
+
+.midBlockRowChtProf{
+	display: flex;
+	flex-direction: row;
+	align-items: center;  
+	gap: 0.2vw;      
+	margin-left: 2vw;
+}
+
+.midBlockRowChtProf>h3{
+	font-size: 18px;
+	font-family: "Gilroy Light";
+	margin: 0.7vh; 
+	padding: 0; 
+}
+
+.midBlockRowChtProf>h2{
+	font-size: 18px;
+	margin: 0.7vh; 
+	padding: 0; 
+}
+
+.bottomBlockRowChtProf{
+	display: flex;
+	flex-direction: row;
+	align-items: center;  
+	gap: 0.2vw;      
+	margin-left: 2vw;
+	margin-top: 1vh;
 }
 
 /* no way ... */
