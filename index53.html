@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Поддержка</title>
+	</head>
+    <style>
+        @font-face {
+            font-family: "Gilroy Extra Bold";
+            src: url(../../assets/fonts/gilroy-extra-bold.otf);
+        }
+
+        @font-face {
+            font-family: "Gilroy Light";
+            src: url(../../assets/fonts/gilroy-light.otf);
+        }
+        :root {
+            --page-width: 100%;
+            --page-height: 100%;
+
+            /* nav */
+            --nav-width: 20.07vw;
+            --nav-min-width: var(--nav-width);
+
+            /* nav btn */
+            --nav-btn-img-width: 1.4vw;
+            --nav-btn-img-height: 1.4vw;
+            --nav-btn-font-size: 2vw;
+            --nav-btn-height: 9vw;
+            --nav-btn-max-height: 10vh;
+            --nav-btn-padding-left: 2vw;
+            --nav-btn-padding-right: 4px;
+
+            /* nav title */
+            --nav-title-line-height: calc(2vh + 2vw);
+            --nav-title-font-size: calc(2vh + 2vw);
+        }
+
+        html, body {
+            min-height: var(--page-height);
+            min-width: var(--page-width);
+            width: var(--page-width);
+        }
+
+        body {
+            background-size: 100%;
+            background: rgba(0,255,204,1) no-repeat center center fixed;
+            background: linear-gradient(54deg, rgba(0,255,204,1) 0%, rgba(0,204,204,1) 100%) no-repeat center center fixed; 
+        }
+
+        h1, h2, h3, h4, h5, h6, p, a {
+            font-family: "Gilroy Extra Bold";
+            color: #fff;
+        }
+
+        .nav {
+            left: 0;
+            top: 0;
+            position: fixed;
+            display: inline-block;
+            background-color: #333;
+            width: var(--nav-width);
+            min-height: var(--page-height);
+            min-width: var(--nav-min-width);
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .nav-title {
+            line-height: var(--nav-title-line-height);
+            font-size: var(--nav-title-font-size);
+        }
+        .nav-btn {
+            display: flex;
+            position: relative;
+            text-decoration: none;
+            height: var(--nav-btn-height);
+            max-height: var(--nav-btn-max-height);
+            text-align: center;
+            align-items: center;
+            margin: 20px;            
+        }
+        .nav-cur-tab {
+            background-color: #616161;
+        }
+        .background-panel-1 {
+            /* width: 584px;
+            height: 798px; */
+                background-color: #333333;
+                color: white;
+                padding: 20px;
+                border-radius: 20px;
+            text-align: center;
+            /* margin-top: 75px;
+            margin-left: 400px; */
+            flex: 1;
+        }
+        .background-panel-2 {
+            /* width: 542px;
+            height: 393px; */
+                background-color: #333333;
+                color: white;
+                padding: 20px;
+                border-radius: 20px;
+            text-align: center;
+            /* margin-left: 1054px; */
+        }
+        .panel1 {
+            font-family: var(--font-family);
+            font-weight: bold;
+            text-align: center;
+            font-size: 36px;
+            color: #fff;
+            width: 100%;
+            text-decoration-line: underline;
+        }
+        .panel-menu {
+            width: 60%;
+            height: 798px;
+            margin-left: auto;
+            display: flex;
+            gap: 25px;
+            margin-right: 170px;
+            margin-top: 100px;
+        }
+        .panel-menu-r {
+            flex: 1;
+            height: 100%;
+            gap: 35px;
+            display: flex;
+            flex-direction: column;
+        }
+        .panel-menu-r > div {
+            flex: 1;
+        }
+        .faq-text{
+            text-align: left;
+            font-size: 24px; 
+            font-weight: bold; 
+            margin: 20px;      
+        }
+        .base-text{
+            text-align: left;
+            font-size: 24px;   
+        } 
+        .background-panel-th-v {
+            background-color: #D9D9D9;
+                padding: 20px;
+                border-radius: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .background-panel-th-v-text {
+            text-align: left;
+            font-size: 28px; 
+            color: black;
+            font-weight: bold;
+        }
+        .exit-btn {
+            width: 200px;
+            height: 50px;
+            background-color: #333333;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 20px;
+                color: white;
+                padding: 20px;
+                border-radius: 20px;
+            text-align: center;
+            margin-left: 380px;
+            margin-top: auto;
+        }
+        .ft-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #333;
+            margin-top: 100px;
+        }
+
+        .ft-content>* {
+            margin: 0vh 4vw;
+        }
+
+        .ft-content>h1 {
+            margin-top: 9vh;
+            margin-bottom: 9vh;
+        }
+
+        .ft-tbl {
+            text-align: center;
+            display: block;
+        }
+
+        .ft-tbl>h2 {
+            font-family: "Gilroy Light";
+        }
+
+        .ft-cols {
+            display: flex;
+            flex-direction: row;
+            vertical-align: middle;
+            column-gap: 14vw;
+            transform: translateX(-2vw);
+        }
+
+        .ft-col {
+            font-size: calc(1vw + 0.7vh);
+            text-align: center;
+        }
+
+        .ft-col>a {
+            font-family: "Gilroy Light";
+            text-decoration: none;
+        }
+
+        .ft-col>h2::after {
+            content: '';
+            display: block;
+            background-color: white;
+            height: 1px;
+            transform: scaleX(1.5);
+        }
+
+        .ft-col>div>a>img {
+            width: calc(2vw + 1vh);
+            height: calc(2vw + 1vh);
+        }
+
+        .ft-btm {
+            background-color: #111;
+            height: 1vh;
+            align-items: center;
+            vertical-align: center;
+        }
+
+        .ft-btm>* {
+            padding: 2vh 2vw;
+            font-family: "Gilroy Light";
+            margin: 0px 0px;
+        }
+    </style>
+	<body>
+		<div class="nav">
+			<h1 class="nav-title">Точка<br/>Опоры</h1>
+			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/main.svg"/><h1>Главная</h1></a>
+			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/profile.svg"/><h1>Профиль</h1></a>
+			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/tasks.svg"/><h1>Задачи</h1></a>
+			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/chat.svg"/><h1>Чат</h1></a>
+			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/settings.svg"/><h1>Настройки</h1></a>
+			<a class="nav-btn nav-cur-tab" href="#"><img src="./PD_developers_241-363/assets/images/help.svg"/><h1>Поддержка</h1></a>
+		</div>
+
+        <a class="exit-btn" href="index51.html" href="#"><img src="./PD_developers_241-363/assets/images/main.svg"/><button>Вернуться назад</button></a>
+
+        <div class="panel-menu">
+            <div class="background-panel-1">
+                <div class="panel1">Интересное для людей с ОВЗ</div>
+                <div class="base-text">Добро пожаловать в раздел, созданный специально для вашей поддержки. Здесь вы найдёте всё необходимое, чтобы получить необходимую помощь.</div>
+                <div class="faq-text">1. Какие права я имею как человек с ограниченными возможностями здоровья?</div>
+                <div class="base-text">Вы имеете право на доступ к услугам, самостоятельность, уважительное отношение, защиту личной информации и возможность участвовать в общественной жизни.</div>
+                <div class="faq-text">2. Как я могу сообщить о своих потребностях и установить границы в получаемой помощи?</div>
+                <div class="base-text">Вы можете обратиться к волонтёрам через нашу платформу и подробно рассказать о своих нуждах и предпочтениях.</div>
+            </div>
+            <div class="panel-menu-r">
+                <div class="background-panel-2">
+                    <div class="base-text">Важно четко обозначить, какая помощь вам необходима и в каком объёме. Не стесняйтесь сообщать о том, что вам удобно, а что нет. Также ознакомьтесь с правилами и рекомендациями, которые помогут сделать взаимодействие более комфортным. </div>
+                    <div class="faq-text">3. Как я могу оставить отзыв о полученной помощи и куда обратиться за дополнительной информацией или поддержкой? </div>
+                    <div class="base-text">Если у вас есть замечания о качестве полученной помощи, вы можете сообщить об этом через нашу службу поддержки. Для получения дополнительной информации или помощи также обращайтесь в службу поддержки, где наши специалисты готовы ответить на ваши вопросы и оказать необходимую поддержку.</div>
+                </div>     
+            </div>
+            </div>
+        </div>
+        <footer>
+			<div class="ft-content">
+				<h1 class="nav-title">Точка<br/>Опоры</h1>
+				<div class="ft-tbl">
+					<div class="ft-cols">
+						<div class="ft-col">
+							<h2>Помощь</h2>
+							<a href="#">Обратная связь</a><br/>
+							<a href="#">Техническая поддержка</a>
+						</div>
+						<div class="ft-col">
+							<h2>Контакты</h2>
+							<a href="#">+7 (900) 800-70-00</a><br/>
+							<a href="#">example@mail.ru</a>
+						</div>
+						<div class="ft-col">
+							<h2>Соц. сети</h2>
+							<div style="flex-direction: row;">
+								<a href="#"><img src="assets/images/vkontakte.svg"/></a>
+								<a href="#"><img src="assets/images/telegram.svg"/></a>
+							</div>
+						</div>
+					</div>
+					<h2>График работы: ежедневно 9:00-18:00</h2>
+				</div>
+			</div>
+			<div class="ft-btm">
+				<h3>© "Точка опоры" - г.Москва, 2024</h3>
+			</div>
+		</footer>
+    </body>
+</html>
