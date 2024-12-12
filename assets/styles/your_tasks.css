@@ -1,0 +1,361 @@
+@font-face {
+	font-family: "Gilroy Extra Bold";
+	src: url(../../assets/fonts/gilroy-extra-bold.otf);
+}
+
+@font-face {
+	font-family: "Gilroy Light";
+	src: url(../../assets/fonts/gilroy-light.otf);
+}
+
+a { text-decoration: none; }
+
+.cont {
+    position: relative;
+    left: 23%;
+}
+.search {
+    background-color: #333333;
+    border-radius: 10px;
+    max-width: 665px;
+    max-height: 80px;
+    gap: 10px;
+    margin-top: 30px;
+}
+.poisk>img {
+    height: 40px;
+    max-width: 40px;
+    margin: 10px;
+    position: relative;
+    top: 7px;
+    left: 3px;
+}
+
+.filtr>img {
+    position: relative;
+    left:10px;
+    top: 3px;
+    height: 40px;
+    max-width: 40px;
+    margin: 5px;
+}
+
+.notif>img {
+    position: relative;
+    left: 840px;
+    bottom: 80px;
+    max-width: 80px;
+}
+
+.arch>img {
+    position: relative;
+    left: 970px;
+    bottom: 80px;
+    max-width: 80px;
+}
+
+.trach>img {
+    position: relative;
+    left: 1110px;
+    bottom: 80px;
+    max-width: 80px;
+}
+
+.search input {
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 43px;
+    height: 68px;
+    text-align: left;
+    border-radius: 10px;
+    position: relative;
+    left: 5px;
+    bottom: 5px;
+}
+
+.plus>img {
+    max-width: 48px;
+    margin: 15px;
+}
+
+.new_task {
+    position: relative;
+    left: 80px;
+    bottom: 60px;
+    font-size: 32px;
+	font-family: "Gilroy Light";
+    
+}
+
+.your_task {
+    position: relative;
+    left: 23%;
+    margin-top: 21px;
+    max-width: 665px;
+    background-color: #333333;
+    border-radius: 10px;
+    max-height: 850px;
+    color: #ffffff;
+}
+
+.btn-1 {
+    margin: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.btn-2 {
+    position: relative;
+    top: 21px;
+}
+
+.btn-3 {
+    position: relative;
+    float: right;
+    bottom: 70px;
+    right: 20px;
+}
+
+.btn-4 {
+    position: relative;
+    float: right;
+    top: 25px;
+    right: 75px;
+}
+
+.your_task>div.text-1 {
+    text-align: center;
+    font-size: 42px;
+	font-family: "Gilroy Light";
+    position: relative;
+    bottom: 30px;
+}
+
+.line {
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+}
+
+.spisok-1>img {
+    max-width: 32px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+ul.spisok-1-1 {
+    list-style-type: none;
+    font-size: 24px;
+	font-family: "Gilroy Light";
+    position: relative;
+    left: 60px;
+    bottom: 682px;
+}
+
+li {
+    margin-bottom: 25px;
+}
+
+ul.spisok-1-2 {
+    list-style-type: none;
+    font-size: 32px;
+	font-family: "Gilroy Light";
+    position: relative;
+    left: 60px;
+    bottom: 682px;
+}
+
+.spisok-1-2 li {
+    margin-bottom: 15px;
+}
+
+.your_task_2 {
+    position: relative;
+    bottom: 914px;
+    margin-top: 21px;
+    max-width: 665px;
+    left: 1200px;
+    background-color: #333333;
+    border-radius: 10px;
+    max-height: 400px;
+    color: #ffffff;
+}
+
+.your_task_2>div.text-1 {
+    text-align: center;
+    font-size: 42px;
+	font-family: "Gilroy Light";
+    position: relative;
+}
+
+ul.spisok-2-1 {
+    list-style-type: none;
+    font-size: 24px;
+	font-family: "Gilroy Light";
+    position: relative;
+    left: 30px;
+    margin-left: 24px;
+    bottom: 255px;
+}
+
+.your_task_3 {
+    position: relative;
+    bottom: 962px;
+    max-width: 665px;
+   /* left: 122vh;  */
+    left: 1200px; 
+    margin-top: 55px;
+    background-color: #333333;
+    border-radius: 10px;
+    max-height: 400px;
+    color: #ffffff;
+}
+
+ul.spisok-3-1 {
+    list-style-type: none;
+    font-size: 24px;
+	font-family: "Gilroy Light";
+    position: relative;
+    left: 30px;
+    margin-left: 24px;
+    bottom: 255px;
+}
+
+.your_task_2>div.text-1 {
+    text-align: center;
+    font-size: 42px;
+	font-family: "Gilroy Light";
+    position: relative;
+    bottom: 30px;
+}
+
+.your_task_3>div.text-1 {
+        text-align: center;
+        font-size: 42px;
+        font-family: "Gilroy Light";
+        position: relative;
+        bottom: 30px;
+}
+
+a:hover { cursor: pointer;}
+
+footer {
+    /* Позиционируем footer внизу main */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/*.containergrid {
+    display: grid;
+    grid-template-rows: 100px 300px 300px 300px 300px;
+    grid-template-columns: 500px 800px 800px;
+}
+
+.your_task {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.your_task_2 {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.your_task_3 {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}*/
+
+/*li.map {
+    float: right;
+    margin: 20px;
+}*/
+
+footer {
+	top: var(--footer-top);
+	position: absolute;
+	background-color: #111;
+	padding: 0 0;
+	width: 100vw;
+	height: 50%;
+	display: block;
+	row-gap: 1vh;
+	margin: 100vh 0 0 0;
+}
+
+.ft-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #333;
+}
+
+.ft-content>* {
+	margin: 0vh 4vw;
+}
+
+.ft-content>h1 {
+	margin-top: 9vh;
+	margin-bottom: 9vh;
+}
+
+.ft-tbl {
+	text-align: center;
+	display: block;
+}
+
+.ft-tbl>h2 {
+	font-family: "Gilroy Light";
+}
+
+.ft-cols {
+	display: flex;
+	flex-direction: row;
+	vertical-align: middle;
+	column-gap: 14vw;
+	transform: translateX(-2vw);
+}
+
+.ft-col {
+	font-size: calc(1vw + 0.7vh);
+	text-align: center;
+}
+
+.ft-col>a {
+	font-family: "Gilroy Light";
+	text-decoration: none;
+}
+
+.ft-col>h2::after {
+	content: '';
+	display: block;
+	background-color: white;
+	height: 1px;
+	transform: scaleX(1.5);
+}
+
+.ft-col>div>a>img {
+	width: calc(2vw + 1vh);
+	height: calc(2vw + 1vh);
+}
+
+.ft-btm {
+	background-color: #111;
+	height: 1vh;
+	align-items: center;
+	vertical-align: center;
+}
+
+.ft-btm>* {
+	padding: 2vh 2vw;
+	font-family: "Gilroy Light";
+	margin: 0px 0px;
+}
+
