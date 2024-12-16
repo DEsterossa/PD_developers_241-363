@@ -1,0 +1,823 @@
+@font-face {
+	font-family: "Gilroy Extra Bold";
+	src: url(../../assets/fonts/gilroy-extra-bold.otf);
+}
+
+@font-face {
+	font-family: "Gilroy Light";
+	src: url(../../assets/fonts/gilroy-light.otf);
+}
+
+:root {
+	--page-width: 100%;
+	--page-height: 100%;
+
+	/* nav */
+	--nav-width: 20.07vw;
+	--nav-min-width: var(--nav-width);
+
+	/* nav btn */
+	--nav-btn-img-width: 1.4vw;
+	--nav-btn-img-height: 1.4vw;
+	--nav-btn-font-size: 2vw;
+	--nav-btn-height: 9vw;
+	--nav-btn-max-height: 10vh;
+	--nav-btn-padding-left: 2vw;
+	--nav-btn-padding-right: 4px;
+
+	/* nav title */
+	--nav-title-line-height: calc(2vh + 2vw);
+	--nav-title-font-size: calc(2vh + 2vw);
+
+	/* content */
+	--content-left: var(--nav-width);
+	--content-left-margin: 4.604vw;
+	--content-width: 71vw;
+	--content-vert-margin: 1vh;
+
+	/* quote */
+	--quote-font-size: calc(0.7vh + 0.8vw);
+	--quote-line-height: calc(var(--quote-font-size) * 1.8);
+	--quote-border-radius: 20px;
+
+	/* quote content */
+	--quote-content-horz-margin: 2vw;
+
+	/* quote author */
+	--quote-author-horz-padding: 8vw;
+	--quote-author-vert-padding: 4vh;
+
+	/* task container */
+	--task-container-width: 65vw;
+	--task-container-vert-margin: 1vh;
+	--task-container-column-gap: 1vw;
+
+	/* task */
+	--task-min-width: 10vw;
+	--task-min-height: var(--task-min-width);
+	--task-font-size: calc(0.6vh + 0.7vw);
+
+	/* task header */
+	--task-header-margin-horz: 1.5vh;
+	--task-header-margin-vert: 1.5vh;
+
+	/* task content */
+	--task-content-margin-horz: var(--task-header-margin-horz);
+	--task-content-margin-vert: var(--task-header-margin-vert);
+
+	/* task span img */
+	--task-span-img-size: calc(5vw + 5vh);
+	--task-span-img-margin: 5px;
+
+	/* news switcher */
+	--news-switcher-width: 10px;
+	--news-switcher-height: calc(110vh + 20vw);
+	--news-switcher-horz-margin: 1vw;
+	--news-switcher-border-radius: 20px;
+
+	/* news switcher btn */
+	--news-switcher-btn-width: 10px;
+	--news-switcher-btn-height: 5vh;
+	--news-switcher-btn-border-radius: 20px;
+
+	/* back btn */
+	--back-btn-border-radius: 20px;
+	--back-btn-margin-bottom: 2vh;
+	--back-btn-width: 24vw;
+	--back-btn-child-horz-padding: 1vw;
+	--back-btn-img-horz-size: calc(2vw + 1vh);
+
+	/* footer */
+	--footer-width: 100vw;
+	--footer-height: 30vh;
+	--footer-top: 110vh;
+	--footer-left: var(--nav-width);
+}
+
+html, body {
+	min-height: var(--page-height);
+	min-width: var(--page-width);
+	width: var(--page-width);
+}
+
+body {
+	background-size: 100%;
+	background: rgba(0,255,204,1) no-repeat center center fixed;
+	background: linear-gradient(54deg, rgba(0,255,204,1) 0%, rgba(0,204,204,1) 100%) no-repeat center center fixed; 
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: "Gilroy Extra Bold";
+	color: #fff;
+}
+
+.nav {
+	left: 0;
+	top: 0;
+	position: fixed;
+	display: inline-block;
+	background-color: #333;
+	width: var(--nav-width);
+	min-height: var(--page-height);
+	min-width: var(--nav-min-width);
+	text-align: center;
+	flex-direction: column;
+}
+
+.nav-title {
+	line-height: var(--nav-title-line-height);
+	font-size: var(--nav-title-font-size);
+}
+
+.nav-btn {
+	display: flex;
+	position: relative;
+	text-decoration: none;
+	height: var(--nav-btn-height);
+	max-height: var(--nav-btn-max-height);
+	text-align: center;
+	align-items: center;
+}
+
+.nav-btn>h1 {
+	font-size: var(--nav-btn-font-size);
+}
+
+.nav-btn>img {
+	padding-left: var(--nav-btn-padding-left);
+	padding-right: var(--nav-btn-padding-right);
+	width: var(--nav-btn-img-width);
+	height: var(--nav-btn-img-height);
+}
+
+.nav-cur-tab {
+	background-color: #616161;
+}
+
+.content {
+	position: absolute;
+	left: var(--content-left);
+	top: var(--content-top);
+	margin-top: 50px;
+	margin-bottom: var(--content-vert-margin);
+	margin-left: var(--content-left-margin);
+	width: var(--content-width);
+	overflow: visible;
+}
+
+.quote {
+	display: flex;
+	position: relative;
+	text-align: center;
+	align-items: center;
+	justify-content:space-between;
+	border-radius: var(--quote-border-radius);
+	flex-direction: row;
+	background-color: #333;
+	font-size: var(--quote-font-size);
+	line-height: var(--quote-line-height);
+	column-gap: vw;
+}
+
+.quote>* {
+	padding: 0px 0px;
+}
+
+.quote-content {
+	float: left;
+	font-family: "Gilroy Light";
+	margin-top: var(--quote-content-horz-margin);
+	margin-bottom: var(--quote-content-horz-margin);
+	margin-left: var(--quote-content-horz-margin);
+	margin-right: var(--quote-content-horz-margin);
+}
+
+.quote-author {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: var(--quote-author-vert-padding);
+	padding-bottom: var(--quote-author-vert-padding);
+	padding-left: var(--quote-author-horz-padding);
+	padding-right: var(--quote-author-horz-padding);
+	font-family: "Gilroy Extra Bold";
+    display: inline-block;
+	background-color: #616161;
+	border-radius: var(--quote-border-radius);
+}
+
+.tasks {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 1vw;
+	width: var(--tasks-width);
+	height: var(--tasks-height);
+}
+
+.task-container {
+	float: left;
+	display: flex;
+	width: var(--task-container-width);
+	justify-content: space-between;
+	font-size: var(--task-font-size);
+	margin-top: 100px;
+	margin-bottom: var(--task-container-vert-margin);
+	column-gap: var(--task-container-column-gap);
+}
+
+.task-container>div {
+	border-radius: var(--quote-border-radius);
+	background-color: #333;
+	width: var(--task-width);
+	height: var(--task-height);
+}
+
+.task-container>div>h2 {
+	margin-left: var(--task-header-margin-horz);
+	margin-right: var(--task-header-margin-horz);
+	margin-top: var(--task-header-margin-vert);
+	margin-bottom: var(--task-header-margin-vert);
+}
+
+.task-container>div>h3 {
+	font-family: "Gilroy Light";
+	margin-left: var(--task-header-margin-horz);
+	margin-right: var(--task-header-margin-horz);
+	margin-top: var(--task-header-margin-vert);
+	margin-bottom: var(--task-header-margin-vert);
+}
+
+.task-container>span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 3px solid black;
+	border-radius: var(--quote-border-radius);
+	width: var(--task-width);
+	height: var(--task-height);
+}
+
+.task-container>span>img {
+	margin: var(--task-span-img-margin);
+	width: var(--task-span-img-size);
+	height: var(--task-span-img-size);
+}
+
+.task-container>span>h2 {
+	margin-top: 0px;
+}
+
+.task-ctrl {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+.task-ctrl>img {
+	object-fit: fill;
+	width: 30px;
+	height: 65px;
+	background-color: #333;
+	border-radius: var(--quote-border-radius);
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	padding-left: 2vh;
+	padding-right: 2vh;
+}
+
+.news {
+	background-color: #616161;
+	border-radius: 20px;
+}
+
+.news-header {
+	font-size: calc(var(--task-font-size) * 1.2);
+	display: flex;
+	align-items: center;
+	margin: 0px 0px;
+}
+
+.news-header>* {
+	padding: calc(0.6vh + 0.6vw);
+	margin: 0px 0px;
+}
+
+.news-header>a {
+	padding: calc(0.4vh + 0.1vw);
+	background-color: #0CC;
+	border-radius: 20px;
+	font-family: "Gilroy Light";
+	text-decoration: none;
+}
+
+.news-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.news-row {
+	background-color: #333;
+	display: table;
+	min-width: 100%;
+}
+
+.news-article {
+	position: relative;
+	display: table-cell;
+	font-size: var(--task-font-size);
+	padding: 1vh 1.6vw;
+}
+
+.news-article>h3 {
+	font-family: "Gilroy Light";
+}
+
+.news-article>h3::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: calc(0.5vh + 0.5vw);
+	background-color: #0CC;
+	border-radius: var(--quote-border-radius);
+	margin-top: 1vh;
+}
+
+.news-article>h4 {
+	font-family: "Gilroy Light";
+	margin: 0px 0px;
+	padding: 0px 0px;
+	float: right;
+}
+
+.news-article-splitter {
+	position: absolute;
+	display: table-cell;
+	width: 1px;
+	height: calc(10vh + 15vw);
+	margin-top: 3vh;
+	margin-bottom: 0px 0px;
+	background-color: #616161;
+}
+
+.nothing {
+	content: '';
+	width: 100%;
+	height: calc(1vh + 1.5vw);
+}
+
+.news-switcher {
+	display: block;
+	content: '';
+	background-color: #616161;
+	width: var(--news-switcher-width);
+	height: var(--news-switcher-height);
+	margin-left: var(--news-switcher-horz-margin);
+	margin-right: var(--news-switcher-horz-margin);
+	border-radius: var(--news-switcher-border-radius);
+}
+
+.news-switcher-btn {
+	display: block;
+	content: '';
+	background-color: #333;
+	width: var(--news-switcher-btn-width);
+	height: var(--news-switcher-btn-height);
+	border-radius: var(--news-switcher-btn-border-radius);
+}
+
+.back-btn {
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	background-color: #333;
+	border-radius: var(--back-btn-border-radius);
+	margin-bottom: var(--back-btn-margin-bottom);
+	align-items: center;
+	width: var(--back-btn-width);
+	font-size: var(--task-font-size);
+	transform: translateX(-2vw);
+}
+
+.back-btn>* {
+	padding-left: var(--back-btn-child-horz-padding);
+	padding-right: var(--back-btn-child-horz-padding);
+}
+
+.back-btn>img {
+	width: var(--back-btn-img-horz-size);
+	height: var(--back-btn-img-horz-size);
+}
+
+.back-btn>h2 {
+	font-family: "Gilroy Light";
+}
+
+footer {
+	position: absolute;
+	background-color: #1a1a1a;
+	width: var(--footer-width);
+	height: var(--footer-height);
+	padding-left: 1vw;
+	padding-right: 1vw;
+	margin-top: 1vw;
+	padding-bottom: 1vw;
+	transform: translateX(-25vw);
+}
+
+footer>p {
+	color: #616161;
+}
+.search-line {
+	display: flex;
+	position: relative;
+	text-align: center;
+	align-items: center;
+	border-radius: 20px;
+	flex-direction: row;
+	background-color: #333;
+	font-size: calc(0.7vh + 0.8vw);
+	line-height: 0.2;
+	column-gap: vw;
+	width: 687px;
+	height: 81px;
+	margin-left: 50px;
+}
+
+.magnifier {
+	background-color: #616161;
+	border-radius: 20px;
+	width: 81px;
+	height: 81px;
+
+	display: flex;
+	justify-content: center; 
+	align-items: center;    
+}
+
+.search-content {
+	float: left;
+	font-family: "Gilroy Light";
+	font-weight: 400;
+	font-size: 32px;
+	letter-spacing: 0.02em;
+	color: #fff;
+	padding-left: 20px;
+}
+.filter {
+    background-color: #616161;
+    border-radius: 20px;
+    width: 81px;
+    height: 81px;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center;    /* Вертикальное центрирование */
+}
+
+.filter svg {
+    width: 43px; /* Ширина иконки */
+    height: 43px; /* Высота иконки */
+}
+
+.search {
+	display: flex;
+	position: relative;
+	text-align: center;
+	align-items: center;
+}
+
+.ringbell {
+	margin-left: 120px;
+	background-color: #333;
+    border-radius: 20px;
+    width: 81px;
+    height: 81px;
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.archive {
+	margin-left: 120px;
+	background-color: #333;
+    border-radius: 20px;
+    width: 81px;
+    height: 81px;
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.task-matrix {
+    display: flex;
+    flex-direction: column; /* Полосы задач размещены вертикально */
+    gap: 20px; /* Расстояние между полосами */
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.task-line {
+    display: flex;
+    gap: 20px; /* Расстояние между квадратами в строке */
+    justify-content: center;
+    align-items: flex-start; /* Выравниваем все элементы по верху */
+	margin: 50px auto;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: column; /* Элементы внутри размещены вертикально */
+    align-items: center; /* Центрируем кнопку относительно квадрата */
+    gap: 10px; /* Расстояние между квадратом и кнопкой */
+}
+
+.rectangle {
+    border-radius: 20px;
+    width: 315px;
+    height: 315px;
+    display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333;
+    font-size: 20px;
+    color: #333;
+	box-sizing: border-box;
+}
+
+.accept-btn {
+	font-family: "Gilroy Light";
+    width: 70%; /* Кнопка занимает 80% ширины квадрата */
+    padding: 10px 0;
+    background-color: #333; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем обводку */
+    border-radius: 10px; /* Скругленные углы */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	margin: 10px;
+}
+
+.accept-btn:hover {
+    background-color: #777777; /* Цвет кнопки при наведении */
+}
+
+.task-title {
+    font-size: 18px;
+    font-weight:lighter;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.task-divider {
+    width: 80%; /* Ширина разделителя меньше ширины квадрата */
+    height: 3px; /* Толщина линии */
+    background-color: white; /* Цвет линии */
+    margin-top: 0px; /* Отступ от заголовка */
+}
+
+.status {
+	display: flex;
+    align-items: center;
+	gap: 10px;
+	margin-top: 50px;
+}
+
+.status-text {
+	font-size: 18px; /* Размер текста */
+    color: #ffffff; /* Цвет текста, соответствующий иконке */
+    margin: 0; /* Убираем внешние отступы */
+    line-height: 1.2; /* Настраиваем межстрочный интервал */
+    text-align: left;
+}
+
+.date-time {
+	display: flex;
+    align-items: center;
+	gap: 70px;
+	margin-top: 30px;
+}
+
+.date-time-dividers {
+	display: flex;
+    align-items: center;
+	gap: 95px;
+	margin-top: 0px;
+}
+
+.task-divider-1 {
+    width: 30px; /* Ширина разделителя меньше ширины квадрата */
+    height: 3px; /* Толщина линии */
+    background-color: white; /* Цвет линии */
+    margin-top: 0px; /* Отступ от заголовка */
+}
+.plus {
+	background-color: #333;
+	border-radius: 20px;
+	width: 81px;
+	height: 81px;
+
+	display: flex;
+	justify-content: center; 
+	align-items: center;    
+}
+
+.trash{
+	margin-left: 120px;
+	background-color: #616161;
+    border-radius: 20px;
+    width: 81px;
+    height: 81px;
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.date-time-1 {
+	display: flex;
+    align-items: center;
+	gap: 70px;
+
+}
+
+.description {
+	display: flex;
+    align-items: center;
+	gap: 30px;
+	margin-top: 60px;
+}
+
+.columns {
+    display: flex; /* Создаем две колонки */
+    gap: 20px; /* Отступ между колонками */
+    justify-content: space-between;
+	margin-top: 50px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение блоков внутри колонок */
+    gap: 20px; /* Отступы между блоками в колонке */
+}
+
+.left-column .rectangle-small {
+    position: relative; /* Для позиционирования фото внутри блока */
+    width: 496px;
+    height: 243px;
+    background-color: #333;
+    border: 1px solid #333;
+    overflow: visible;
+	display: flex;
+}
+
+.left-column .rectangle-tall {
+    width: 496px;
+    height: 600px;
+    background-color: #333; /* Примерный цвет */
+    border: 1px solid #333;
+}
+
+.right-column .rectangle-large {
+    width: 864px;
+    height: 640px;
+    background-color: #333; /* Примерный цвет */
+    border: 1px solid #333;
+}
+
+.row {
+    display: flex; /* Горизонтальное расположение двух нижних блоков */
+    gap: 20px; /* Отступ между двумя блоками */
+}
+
+.rectangle-medium {
+    width: 415px;
+    height: 203px;
+    background-color: #333; /* Цвет блока */
+    border: 1px solid #333;
+    padding: 10px; /* Внутренние отступы уменьшаются */
+    display: flex;
+    flex-direction: column; /* Расположение вложенных элементов по вертикали */
+    gap: 5px; /* Расстояние между вложенными элементами */
+}
+
+.rectangle-medium > * {
+    margin: 0; /* Убираем или уменьшаем стандартные отступы элементов */
+}
+
+.photo-container {
+    position: absolute;
+    top: -50px; /* Фото выходит за верхнюю границу блока */
+    left: 50%; /* Центрируем фото горизонтально */
+    transform: translateX(-50%); /* Выравниваем центрирование */
+    width: 120px; /* Размер контейнера для фото */
+    height: 120px;
+    background-color: #333;
+    border: 5px solid #333; /* Серая обводка */
+    border-radius: 50%; /* Делаем контейнер круглым */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+}
+
+.photo {
+    width: 200px; /* Фото занимает весь контейнер */
+    height: 200px;
+    object-fit: cover; /* Масштабируем фото, сохраняя пропорции */
+    border-radius: 50%; /* Делаем фото круглым */
+}
+
+.profile-name {
+	margin-top: 130px;
+}
+
+.profile-mini-name {
+	font-family: "Gilroy Light";
+	margin-top: -15px;
+}
+
+.profile-info {
+    font-family: "Gilroy Light"; /* Общий шрифт для блока */
+    color: #fff; /* Белый цвет текста */
+}
+
+.profile-info p {
+    margin: 15px 0; /* Отступы между строками */
+    font-size: 16px; /* Размер общего текста */
+}
+
+.profile-info .label {
+    font-family: "Gilroy Extra Bold"; /* Шрифт для подписи */
+    font-weight: bold;
+    color: #fff; /* Цвет подписи (можно изменить) */
+}
+
+.profile-info .value {
+    font-family: "Gilroy Light"; /* Шрифт для значения */
+    color: #fff; /* Цвет значения (или оставить общий) */
+}
+
+.profile-description {
+    font-family: "Gilroy Light"; /* Основной шрифт */
+    color: #fff; /* Цвет текста */
+    line-height: 1.6; /* Межстрочный интервал */
+	max-width: 805px;
+	margin-top: -15px;
+	
+}
+
+.profile-description p {
+    margin: 10px 0; /* Отступы между абзацами */
+    font-size: 16px;
+	margin-left: 20px;
+}
+
+.profile-description ol {
+    margin-left: 20px; /* Отступ для списка */
+}
+
+.profile-description ol li {
+    margin-bottom: 15px; /* Отступ между пунктами списка */
+    font-size: 16px;
+}
+
+.profile-description ol li strong {
+    font-family: "Gilroy Extra Bold"; /* Выделение заголовков в списке */
+    color: #0CC; /* Цвет заголовков */
+}
+
+.first-string {
+    display: flex; /* Устанавливаем flex-контейнер */
+    align-items: center; /* Вертикальное выравнивание элементов */
+    gap: 25px; /* Расстояние между стрелочкой и текстом */
+    margin-top: 20px; /* Сохраняем ваш отступ сверху */
+}
+
+.second-string {
+	display: flex; /* Устанавливаем flex-контейнер */
+    align-items: center; /* Вертикальное выравнивание элементов */
+    gap: 25px; /* Расстояние между стрелочкой и текстом */
+    margin-top: 20px; /* Сохраняем ваш отступ сверху */
+}
+.second-label {
+	font-family: "Gilroy Light";
+}
+.overlay {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%; /* Центрируем по вертикали */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translate(100%, 90%); /* Выравниваем центрирование */
+    width: 50px; /* Уменьшенная ширина */
+    height: 50px; /* Уменьшенная высота */
+    object-fit: contain; /* Сохраняем пропорции изображения */
+    z-index: 2; /* Накладываем поверх аватара */
+}
+
+/* no way ... */
