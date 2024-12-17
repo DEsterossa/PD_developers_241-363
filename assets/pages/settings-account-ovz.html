@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Мой аккаунт</title>
+	<script src="../Js/settings-edit-screen.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/settings-main.css"/>
 </head>
 <body>
@@ -20,8 +21,8 @@
 			
 			<div class="tabs">
 				<a class="tab-btn cur-tab" href="#"><img src="../images/profile_black.svg"/><h2>Мой аккаунт</h2></a>
-				<a class="tab-btn" href="#"><img src="../images/notification.svg"/><h2>Уведомления</h2></a>
-				<a class="tab-btn" href="#"><img src="../images/theme.svg"/><h2>Внешний вид</h2></a>
+				<a class="tab-btn" href="./settings_notifications.html"><img src="../images/notification.svg"/><h2>Уведомления</h2></a>
+				<a class="tab-btn" href="./settings_appearance.html"><img src="../images/theme.svg"/><h2>Внешний вид</h2></a>
 			</div>
 
 			<div class="content">
@@ -35,15 +36,15 @@
 					<h3 class="to-center less-margin-bot">46 лет, Москва</h3>
 					<div class="data-change">
 						<h4><img class="pen-image" src="../images/pen.svg">Телефон:</h4>
-						<a href="#"><h4 class="thin-baby padding-plus"> +7 (800) 535-35-35</h4></a>
+						<a id="setting-edit-phone" href="#"><h4 class="thin-baby padding-plus"> +7 (800) 535-35-35</h4></a>
 					</div>
 					<div class="data-change">
 						<h4><img class="pen-image" src="../images/pen.svg">Почта:</h4>
-						<a href="#"><h4 class="thin-baby padding-plus">example@yandex.ru</h4></a>
+						<a id="setting-edit-mail" href="#"><h4 class="thin-baby padding-plus">example@yandex.ru</h4></a>
 					</div>
 					<div class="data-change">
 						<h4><img class="pen-image" src="../images/pen.svg">Пароль:</h4>
-						<a href="#"><h4 class="thin-baby padding-plus">********</h4></a>
+						<a id="setting-edit-pwd" href="#"><h4 class="thin-baby padding-plus">********</h4></a>
 					</div>
 					<div class="data-change">
 						<h4><img class="pen-image" src="../images/pen.svg">Дата рождения:</h4>
