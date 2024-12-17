@@ -7,12 +7,12 @@
     <style>
         @font-face {
             font-family: "Gilroy Extra Bold";
-            src: url(../../assets/fonts/gilroy-extra-bold.otf);
+            src: url(../fonts/gilroy-extra-bold.otf);
         }
 
         @font-face {
             font-family: "Gilroy Light";
-            src: url(../../assets/fonts/gilroy-light.otf);
+            src: url(../fonts/gilroy-light.otf);
         }
         :root {
             --page-width: 100%;
@@ -83,7 +83,7 @@
         .nav-cur-tab {
             background-color: #616161;
         }
-        .background-panel-faq {
+        .background-panel-1 {
             /* width: 584px;
             height: 798px; */
                 background-color: #333333;
@@ -95,7 +95,7 @@
             margin-left: 400px; */
             flex: 1;
         }
-        .background-panel-th {
+        .background-panel-2 {
             /* width: 542px;
             height: 393px; */
                 background-color: #333333;
@@ -105,7 +105,7 @@
             text-align: center;
             /* margin-left: 1054px; */
         }
-        .background-panel-info {
+        .background-panel-3 {
             /* width: 542px;
             height: 370px; */
                 background-color: #333333;
@@ -120,19 +120,24 @@
             font-family: var(--font-family);
             font-weight: bold;
             text-align: center;
-            font-size: 36px;
             color: #fff;
             width: 100%;
             text-decoration-line: underline;
+                /* Интересное для волонтёров */
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-size: 30px;
+
+
         }
         .panel-menu {
-            width: 65%;
-            height: 798px;
+            width: 77%;
+            height: 850px;
             margin-left: auto;
             display: flex;
             gap: 25px;
-            margin-right: 130px;
-            margin-top: 100px;
+            margin-right: 30px;
+            margin-top: 40px;
         }
         .panel-menu-r {
             flex: 1;
@@ -148,9 +153,16 @@
             text-align: left;
             font-size: 24px; 
             font-weight: bold; 
-            margin: 20px;
-            font-family: 'Gilroy';     
+            margin: 20px; 
+            font-family: 'Gilroy';
+            text-align: justify; 
         }
+        .base-text{
+            text-align: left;
+            font-size: 24px;  
+            font-family: 'Gilroy';
+            font-weight: 100;      
+        }    
         .background-panel-th-v {
             background-color: #D9D9D9;
                 padding: 20px;
@@ -163,45 +175,21 @@
             font-size: 28px; 
             color: black;
             font-weight: bold;
-
-            font-family: 'Gilroy';
-            font-style: normal;
-            font-weight: 800;
-            font-size: 28px;
-            line-height: 34px;
-            text-align: justify;
-
-            color: #000000;
-
-
         }
-        .button1 {
- 	    width: 482px;
-	    height: 83px;
-	    font-size: 30px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px;
-            background-color: #D9D9D9;
-            color: black;
-            cursor: pointer;
-	    font-weight: bold;
-        margin-top: 50px;
-        font-family: 'Gilroy';
-        }
-        .button2 {
- 	    width: 482px;
-	    height: 83px;
-	    font-size: 29px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px;
-            background-color: #D9D9D9;
-            color: black;
-            cursor: pointer;
-	    font-weight: bold;
-        margin-top: 50px;
-        font-family: 'Gilroy';
+        .exit-btn {
+            width: 200px;
+            height: 50px;
+            background-color: #333333;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 20px;
+                color: white;
+                padding: 20px;
+                border-radius: 20px;
+            text-align: center;
+            margin-left: 380px;
+            margin-top: auto;
+            font-weight: bold;
         }
         .ft-content {
             display: flex;
@@ -272,45 +260,41 @@
             font-family: "Gilroy Light";
             margin: 0px 0px;
         }
-        
-
     </style>
 	<body>
 		<div class="nav">
 			<h1 class="nav-title">Точка<br/>Опоры</h1>
-			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/main.svg"/><h1>Главная</h1></a>
-			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/profile.svg"/><h1>Профиль</h1></a>
-			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/tasks.svg"/><h1>Задачи</h1></a>
-			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/chat.svg"/><h1>Чат</h1></a>
-			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/settings.svg"/><h1>Настройки</h1></a>
-			<a class="nav-btn nav-cur-tab" href="#"><img src="./PD_developers_241-363/assets/images/help.svg"/><h1>Поддержка</h1></a>
+			<a class="nav-btn" href="../../index.html"><img src="../images/main.svg"/><h1>Главная</h1></a>
+			<a class="nav-btn" href="./chatProfileMasha.html"><img src="../images/profile.svg"/><h1>Профиль</h1></a>
+			<a class="nav-btn" href="./tasks_notifi_Volo.html"><img src="../images/tasks.svg"/><h1>Задачи</h1></a>
+			<a class="nav-btn" href="./chat"><img src="../images/chat.svg"/><h1>Чат</h1></a>
+			<a class="nav-btn" href="./settings-account-volo.html"><img src="../images/settings.svg"/><h1>Настройки</h1></a>
+			<a class="nav-btn nav-cur-tab" href="#"><img src="../images/help.svg"/><h1>Помощь</h1></a>
 		</div>
+        <a href="./index51.html"><button class="exit-btn">Вернуться назад</button></a>
         <div class="panel-menu">
-            <div class="background-panel-faq">
-                <div class="panel1">FAQ</div>
-                <div class="faq-text">Что делать, если я не знаю, как помочь?</div>
-                <div class="faq-text">Могу ли я отказаться от выполнения задачи?</div>
-                <div class="faq-text">Как мне понять, что я всё делаю правильно?</div>
-                <div class="faq-text">Что делать, если пользователь перестал выходить на связь?</div>
-                <div class="faq-text">Обязан ли я помогать в выходные или праздники?</div>
-                <div class="faq-text">Как узнать, какие задачи я могу выполнять?</div>
-                <div class="faq-text">Могу ли я выбрать задачи, в которых я лучше всего могу помочь пользователю?</div>
-                <div class="faq-text">Можно ли привлечь других волонтёров для выполнения сложной задачи?</div>
-                <div class="faq-text">Как поступить, если я сделал ошибку при выполнении задачи?</div>
-                <div class="faq-text">Нужно ли постоянно быть на связи с пользователем?</div>
+            <div class="background-panel-1">
+                <div class="panel1">Интересное для волонтёров</div>
+                <div class="base-text">Добро пожаловать в раздел, созданный специально для вашей поддержки! Здесь вы найдёте всё необходимое, чтобы успешно помогать людям с ограниченными возможностями здоровья.</div>
+                <div class="faq-text">1. Кто такие наши пользователи?</div>
+                <div class="base-text">Наши пользователи — это люди с разными особенностями здоровья, которые нуждаются в поддержке для выполнения ежедневных задач и общения.Важно помнить: Всегда проявляйте уважение и терпение. Старайтесь понять потребности каждого человека, задавайте вопросы, если что-то неясно.</div>
+                <div class="faq-text">2. Ваши обязанности как волонтёра Вы — ключевое звено проекта! Ваша роль: Помогать пользователям планировать задачи через задачник.</div>
+                <div class="base-text">Вы — ключевое звено проекта! Ваша роль: Помогать пользователям планировать задачи через задачник.</div>
             </div>
             <div class="panel-menu-r">
-                <div class="background-panel-th">
-                    <div class="panel1">Точка Опоры</div>
-                    <div class="background-panel-th-v">
-                        <div class="background-panel-th-v-text">Сайт создан неравнодушными людьми для помощи людям с ограниченными возможностями. Здесь удобно поддерживать связь с волонтёрами при помощи различных инструментов.</div>
-                    </div>
-                </div>
-                <div class="background-panel-info">
-                    <div class="panel1">Полезная информация</div>
-                    <a href="index52.html"><button class="button1">Интересное для волонтёров</button></a>
-                    <a href="index53.html"><button class="button2">Интересное для людей с ОВЗ</button></a>
+                <div class="background-panel-2">
+                    <div class="base-text">Оказывать эмоциональную поддержку в чате. Делать процесс взаимодействия лёгким и комфортным. Помните: вы не обязаны решать всё самостоятельно. В сложных случаях вы можете обратиться к координатору или к другим волонтёрам. </div>
+                    <div class="faq-text">3. Основы общения с людьми с ОВЗ Как правильно общаться: </div>
+                    <div class="base-text">Говорите просто и ясно, избегайте сложных терминов. Не торопитесь, дайте человеку время ответить. Предлагайте помощь только в случае необходимости, уважайте независимость пользователя. Чего не стоит делать: Избегать общения. Отвечать сухо. Употреблять стереотипные выражения или жалостливый тон.</div>
                 </div>     
+            </div>
+            <div class="panel-menu-r">
+                <div class="background-panel-3">
+                    <div class="faq-text">4. Работа с задачником</div>
+                    <div class="base-text">Функции задачника: Создание и редактирование задач для пользователей. Установка напоминаний для выполнения задач. Как помогать через задачник: Помогите пользователю определить приоритеты. Убедитесь, что задачи записаны понятно. Если задача требует помощи, обсудите, как её можно выполнить. </div>
+                    <div class="faq-text">5. Общение в чате </div>
+                    <div class="base-text">Чат — это место для поддержки и обсуждения. Начните с приветствия: "Добрый день! Как я могу вам помочь?" Если пользователь делится своими трудностями, внимательно выслушайте и предложите помощь. Если не знаете, как ответить, скажите: "Я уточню и обязательно вернусь к вам с ответом."</div>
+                </div>
             </div>
         </div>
         <footer>
@@ -331,8 +315,8 @@
 						<div class="ft-col">
 							<h2>Соц. сети</h2>
 							<div style="flex-direction: row;">
-								<a href="#"><img src="assets/images/vkontakte.svg"/></a>
-								<a href="#"><img src="assets/images/telegram.svg"/></a>
+								<a href="#"><img src="../images/vkontakte.svg"/></a>
+								<a href="#"><img src="../images/telegram.svg"/></a>
 							</div>
 						</div>
 					</div>
