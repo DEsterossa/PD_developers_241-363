@@ -7,12 +7,12 @@
     <style>
         @font-face {
             font-family: "Gilroy Extra Bold";
-            src: url(../../assets/fonts/gilroy-extra-bold.otf);
+            src: url(../fonts/gilroy-extra-bold.otf);
         }
 
         @font-face {
             font-family: "Gilroy Light";
-            src: url(../../assets/fonts/gilroy-light.otf);
+            src: url(../fonts/gilroy-light.otf);
         }
         :root {
             --page-width: 100%;
@@ -120,19 +120,24 @@
             font-family: var(--font-family);
             font-weight: bold;
             text-align: center;
-            font-size: 36px;
             color: #fff;
             width: 100%;
             text-decoration-line: underline;
+                /* Интересное для волонтёров */
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-size: 30px;
+
+
         }
         .panel-menu {
             width: 77%;
-            height: 798px;
+            height: 850px;
             margin-left: auto;
             display: flex;
             gap: 25px;
             margin-right: 30px;
-            margin-top: 100px;
+            margin-top: 40px;
         }
         .panel-menu-r {
             flex: 1;
@@ -148,11 +153,15 @@
             text-align: left;
             font-size: 24px; 
             font-weight: bold; 
-            margin: 20px;  
+            margin: 20px; 
+            font-family: 'Gilroy';
+            text-align: justify; 
         }
         .base-text{
             text-align: left;
-            font-size: 24px;   
+            font-size: 24px;  
+            font-family: 'Gilroy';
+            font-weight: 100;      
         }    
         .background-panel-th-v {
             background-color: #D9D9D9;
@@ -180,6 +189,7 @@
             text-align: center;
             margin-left: 380px;
             margin-top: auto;
+            font-weight: bold;
         }
         .ft-content {
             display: flex;
@@ -254,19 +264,19 @@
 	<body>
 		<div class="nav">
 			<h1 class="nav-title">Точка<br/>Опоры</h1>
-			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/main.svg"/><h1>Главная</h1></a>
-			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/profile.svg"/><h1>Профиль</h1></a>
-			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/tasks.svg"/><h1>Задачи</h1></a>
-			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/chat.svg"/><h1>Чат</h1></a>
-			<a class="nav-btn" href="#"><img src="./PD_developers_241-363/assets/images/settings.svg"/><h1>Настройки</h1></a>
-			<a class="nav-btn nav-cur-tab" href="#"><img src="./PD_developers_241-363/assets/images/help.svg"/><h1>Поддержка</h1></a>
+			<a class="nav-btn" href="index.html"><h1>Главная</h1></a>
+			<a class="nav-btn" href="./profile.html"><img src="../images/profile.svg"/><h1>Профиль</h1></a>
+			<a class="nav-btn" href="./your_task_ovz.html"><img src="../images/tasks.svg"/><h1>Задачи</h1></a>
+			<a class="nav-btn" href="./chat.html"><img src="../images/chat.svg"/><h1>Чат</h1></a>
+			<a class="nav-btn" href="./your_tasks_vol.html"><img src="../images/settings.svg"/><h1>Настройки</h1></a>
+			<a class="nav-btn nav-cur-tab" href="#"><img src="../images/help.svg"/><h1>Поддержка</h1></a>
 		</div>
 
-        <a class="exit-btn" href="index51.html" href="#"><img src="./PD_developers_241-363/assets/images/main.svg"/><button>Вернуться назад</button></a>
-        
+        <a href="index51.html"><button class="exit-btn">Вернуться назад</button></a>
+
         <div class="panel-menu">
             <div class="background-panel-1">
-                <div class="panel1">FAQ</div>
+                <div class="panel1">Интересное для волонтёров</div>
                 <div class="base-text">Добро пожаловать в раздел, созданный специально для вашей поддержки! Здесь вы найдёте всё необходимое, чтобы успешно помогать людям с ограниченными возможностями здоровья.</div>
                 <div class="faq-text">1. Кто такие наши пользователи?</div>
                 <div class="base-text">Наши пользователи — это люди с разными особенностями здоровья, которые нуждаются в поддержке для выполнения ежедневных задач и общения.Важно помнить: Всегда проявляйте уважение и терпение. Старайтесь понять потребности каждого человека, задавайте вопросы, если что-то неясно.</div>
@@ -307,8 +317,8 @@
 						<div class="ft-col">
 							<h2>Соц. сети</h2>
 							<div style="flex-direction: row;">
-								<a href="#"><img src="assets/images/vkontakte.svg"/></a>
-								<a href="#"><img src="assets/images/telegram.svg"/></a>
+								<a href="#"><img src="../images/vkontakte.svg"/></a>
+								<a href="#"><img src="../images/telegram.svg"/></a>
 							</div>
 						</div>
 					</div>

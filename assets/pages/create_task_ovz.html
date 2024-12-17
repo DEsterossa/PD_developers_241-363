@@ -8,12 +8,12 @@
 	<body>
 		<div class="nav">
 			<h1 class="nav-title">Точка<br/>Опоры</h1>
-			<a class="nav-btn nav-cur-tab" href="#"><img src="assets/images/main.svg"/><h1>Главная</h1></a>
-			<a class="nav-btn" href="#"><img src="assets/images/profile.svg"/><h1>Профиль</h1></a>
-			<a class="nav-btn" href="assets/pages/tasks_notifi_Volo.html"><img src="assets/images/tasks.svg"/><h1>Задачи</h1></a>
-			<a class="nav-btn" href="assets/pages/chat.html"><img src="assets/images/chat.svg"/><h1>Чат</h1></a>
-			<a class="nav-btn" href="#"><img src="assets/images/settings.svg"/><h1>Настройки</h1></a>
-			<a class="nav-btn" href="#"><img src="assets/images/help.svg"/><h1>Помощь</h1></a>
+			<a class="nav-btn" href="../../index.html"><img src="../images/main.svg"/><h1>Главная</h1></a>
+			<a class="nav-btn" href="./profile.html"><img src="../images/profile.svg"/><h1>Профиль</h1></a>
+			<a class="nav-btn nav-cur-tab" href="./tasks_notifi_Volo.html"><img src="../images/tasks.svg"/><h1>Задачи</h1></a>
+			<a class="nav-btn" href="./chat"><img src="../images/chat.svg"/><h1>Чат</h1></a>
+			<a class="nav-btn" href="./settings-account-volo.html"><img src="../images/settings.svg"/><h1>Настройки</h1></a>
+			<a class="nav-btn" href="./index51.html"><img src="../images/help.svg"/><h1>Помощь</h1></a>
 		</div>
 		<div class="content">
 			<div class="header">
@@ -24,13 +24,13 @@
                     <p class="create_task__text">Создать задачу</p>
                 </div>
                 <div class="notification">
-                    <a href="#"> <img class="bell" src="../images/Bell.png"></a>
+                    <a href="./tasks_notifi_Ovz.html"> <img class="bell" src="../images/Bell.png"></a>
                 </div>
                 <div class="archive">
-                    <a href="#"> <img class="archive_img" src="../images/Archive.png"></a>
+                    <a href="./find_mode.html"> <img class="archive_img" src="../images/Archive.png"></a>
                 </div>
                 <div class="trash">
-                    <a href="#"> <img class="trash_img" src="../images/Trash 2.png"></a>
+                    <a href="./tasks_delete.html"> <img class="trash_img" src="../images/Trash 2.png"></a>
                 </div>
             </div>
             <div class="task_creation">
@@ -48,20 +48,38 @@
                         <div class="criteria_block">
                             <p>Время:</p>
                             <div class="item item1">
-                                <p>13:30</p>
+                                <input  type="text">
                             </div>
                             <p>Дата:</p>
                             <div class="item item2">
-                                
+                                <input  type="text">
                             </div>
                             <p>Место:</p>
                             <div class="item item3">
-                                
+								<input  type="text">
                             </div>
                         </div>
+						<div class="add_and_save_block">
+							<div class="add_files">
+								<p>Добавить файлы</p>
+								<a href="#"></a>
+							</div>
+							<div class="save_files">
+								<p>Сохранить файлы</p>
+							</div>
+						</div>
+						<div class="textfield">
+							<textarea rows="4" cols="50"></textarea>
+						</div>
                     </div>
                 </div>
             </div>
+			<div class="send_task" onclick="location.href = './tasks_notifi_Ovz.html';">
+				<div class="send_task_text">
+					<p>Отправить задачу</p>
+				</div>
+				<a href="#"></a>
+			</div>
 		</div>
 		<footer>
 			<div class="ft-content">
@@ -81,8 +99,8 @@
 						<div class="ft-col">
 							<h2>Соц. сети</h2>
 							<div style="flex-direction: row;">
-								<a href="#"><img src="assets/images/vkontakte.svg"/></a>
-								<a href="#"><img src="assets/images/telegram.svg"/></a>
+								<a href="#"><img src="../images/vkontakte.svg"/></a>
+								<a href="#"><img src="../images/telegram.svg"/></a>
 							</div>
 						</div>
 					</div>

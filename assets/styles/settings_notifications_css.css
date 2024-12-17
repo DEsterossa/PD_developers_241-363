@@ -1,0 +1,436 @@
+@font-face {
+	font-family: "Gilroy Extra Bold";
+	src: url(../../assets/fonts/gilroy-extra-bold.otf);
+}
+
+@font-face {
+	font-family: "Gilroy Light";
+	src: url(../../assets/fonts/gilroy-light.otf);
+}
+
+:root {
+	--page-width: 100%;
+	--page-height: 100%;
+
+	/* nav */
+	--nav-width: 20.07vw;
+	--nav-min-width: var(--nav-width);
+
+	/* nav btn */
+	--nav-btn-img-width: 1.4vw;
+	--nav-btn-img-height: 1.4vw;
+	--nav-btn-font-size: 2vw;
+	--nav-btn-height: 9vw;
+	--nav-btn-max-height: 10vh;
+	--nav-btn-padding-left: 2vw;
+	--nav-btn-padding-right: 4px;
+
+	/* nav title */
+	--nav-title-line-height: calc(2vh + 2vw);
+	--nav-title-font-size: calc(2vh + 2vw);
+
+	/* footer */
+	--footer-width: 100vw;
+	--footer-height: 30vh;
+	--footer-top: 110vh;
+	--footer-left: var(--nav-width);
+
+	/* ЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ */
+	/* tabs */
+	--tabs-left: var(--nav-width);
+	--tabs-left-margin: 4.604vw;
+	--tabs-width: 71vw;
+	--tabs-vert-margin: 1vh;
+
+	/* block */
+	--block-left: var(--nav-width);
+	--block-left-margin: 4.604vw;
+	--block-width: 71vw;
+	--block-vert-margin: 1vh;
+
+	/* content */
+	--content-left: var(--nav-width);
+	--content-left-margin: 4.604vw;
+	--content-width: 71vw;
+	--content-vert-margin: 1vh;
+	--content-font-size: 2vw;
+
+	--content-min-width: var(--nav-width);
+
+	--tab-btn-img-width: 1.4vw;
+	--tab-btn-img-height: 1.4vw;
+	--tab-btn-font-size: 1.2vw;
+	--tab-btn-height: 9vw;
+	--tab-btn-max-height: 10vh;
+	--tab-btn-padding-left: 2vw;
+	--tab-btn-padding-right: 4px;
+
+
+}
+
+html, body {
+	min-height: var(--page-height);
+	min-width: var(--page-width);
+	width: var(--page-width);
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+body {
+	background-size: 100%;
+	background: rgba(0,255,204,1) no-repeat center center fixed;
+	background: linear-gradient(54deg, rgba(0,255,204,1) 0%, rgba(0,204,204,1) 100%) no-repeat center center fixed; 
+}
+/* ФОНТ */
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: "Gilroy Extra Bold";
+	color: #fff;
+}
+
+.no-margin {
+	margin: 0;
+	padding: 0;
+}
+
+.less-margin-top {
+	margin-top: 5px;
+	padding: 0;
+}
+
+.less-margin-bot {
+	margin-bottom: 2px;
+	padding: 0;
+}
+
+.padding-plus {
+	padding-left: 5px;
+}
+
+.thin-baby {
+	font-family: "Gilroy Light";
+	font-weight: 100;
+}
+
+.to-center {
+	text-align: center;
+	align-items: center;
+}
+
+/* НАВ */
+.nav {
+	left: 0;
+	top: 0;
+	position: fixed;
+	display: inline-block;
+	background-color: #333;
+	width: var(--nav-width);
+	min-height: var(--page-height);
+	min-width: var(--nav-min-width);
+	text-align: center;
+	flex-direction: column;
+}
+
+.nav-title {
+	line-height: var(--nav-title-line-height);
+	font-size: var(--nav-title-font-size);
+}
+
+.nav-btn {
+	display: flex;
+	position: relative;
+	text-decoration: none;
+	height: var(--nav-btn-height);
+	max-height: var(--nav-btn-max-height);
+	text-align: center;
+	align-items: center;
+}
+
+.nav-btn>h1 {
+	font-size: var(--nav-btn-font-size);
+}
+
+.nav-btn>img {
+	padding-left: var(--nav-btn-padding-left);
+	padding-right: var(--nav-btn-padding-right);
+	width: var(--nav-btn-img-width);
+	height: var(--nav-btn-img-height);
+}
+
+.nav-cur-tab {
+	background-color: #616161;
+}
+
+.block {
+	display: inline-block;
+	position: absolute;
+	width: 60%;
+	height: 100%;
+	left: var(--block-left); 
+	top: var(--block-top);
+}
+
+/* Вкладки */
+.tabs {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 21.6%;
+	height: 100%;
+
+	margin-top: 127px;
+	padding-left: 20px;
+	justify-content: flex-start; /* ЛИБО space-between  */
+	gap: 20px;
+}
+
+.tab-btn {
+	display: flex;
+	position: relative;
+	text-decoration: none;
+	width: 100%;
+	height: 98px;
+	color: #333333;
+
+	border: 5px solid #333333;
+	border-radius: 20px;
+	background-color: #333333;
+	text-align: center;
+	align-items: center;
+}
+
+.tab-btn>h2 {
+	font-size: var(--tab-btn-font-size);
+}
+
+.tab-btn>img {
+	padding-left: var(--tab-btn-padding-left);
+	padding-right: var(--tab-btn-padding-right);
+	width: var(--tab-btn-img-width);
+	height: var(--tab-btn-img-height);
+}
+
+.cur-tab {
+	background-color: #FFFFFF;
+}
+
+.cur-tab>h2 {
+	color: #333333;
+}
+/* Вкладки over */
+
+/* ОСНОВА */
+.content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-decoration: none;
+	min-width: var(--content-min-width);
+	align-content: space-between;
+	position: absolute;
+	width: 95%;
+	height: 89%;
+	left: var(--block-left); 
+	top: var(--content-top);
+	margin-top: 125px;
+	justify-content: space-between; /* ЛИБО space-between flex-start */
+	gap: 20px;
+	/* border: 5px solid #333333; */
+}
+
+.profile {
+	font-size: 0.825vw;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 49%;
+	width: 76%;
+	background-color: #333333;
+	border-radius: 20px;
+	justify-content: flex-start;
+	/** text-align: center;
+	align-items: center; */
+}
+
+.data {
+	font-size: 0.835vw;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 64%;
+	width: 36%;
+	background-color: #333333;
+	border-radius: 20px;
+	padding-inline: 14px;
+	box-sizing: border-box;
+}
+
+.data-change {
+	display: flex;
+	height: 8%;
+}
+
+.about {
+	font-size: 1.1vw;
+	position: relative;
+	overflow: hidden;
+	height: 52%;
+	width: 63%;
+	background-color: #333333;
+	border-radius: 20px;
+	padding-inline: 12px;
+	box-sizing: border-box;
+}
+
+.about> {
+	font-family: "Gilroy Light";
+    font-size: 0.85vw;
+}
+
+.profile-image {
+	position: absolute;
+	top: -33.33%;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+    /* width: 200px;
+    height: 200px; */
+
+	width: 48.78%;
+    height: 83.33%;
+
+    border-radius: 50%;
+}
+
+.pen-image {
+	padding-right: 9px;
+	width: 13px;
+    height: 12px;
+}
+
+footer {
+	top: var(--footer-top);
+	position: absolute;
+	background-color: #111;
+	padding: 0 0;
+	width: 100vw;
+	height: 50%;
+	display: block;
+	row-gap: 1vh;
+}
+
+.ft-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #333;
+}
+
+.ft-content>* {
+	margin: 0vh 4vw;
+}
+
+.ft-content>h1 {
+	margin-top: 9vh;
+	margin-bottom: 9vh;
+}
+
+.ft-tbl {
+	text-align: center;
+	display: block;
+}
+
+.ft-tbl>h2 {
+	font-family: "Gilroy Light";
+}
+
+.ft-cols {
+	display: flex;
+	flex-direction: row;
+	vertical-align: middle;
+	column-gap: 14vw;
+	transform: translateX(-2vw);
+}
+
+.ft-col {
+	font-size: calc(1vw + 0.7vh);
+	text-align: center;
+}
+
+.ft-col>a {
+	font-family: "Gilroy Light";
+	text-decoration: none;
+}
+
+.ft-col>h2::after {
+	content: '';
+	display: block;
+	background-color: white;
+	height: 1px;
+	transform: scaleX(1.5);
+}
+
+.ft-col>div>a>img {
+	width: calc(2vw + 1vh);
+	height: calc(2vw + 1vh);
+}
+
+.ft-btm {
+	background-color: #111;
+	height: 1vh;
+	align-items: center;
+	vertical-align: center;
+}
+
+.ft-btm>* {
+	padding: 2vh 2vw;
+	font-family: "Gilroy Light";
+	margin: 0px 0px;
+}
+
+.input-field {
+    border-radius: 20px;
+    width: 500px;
+    height: 40px; 
+    /* text-align: left; */
+    background-color: #00CCCC;
+    margin-bottom: 20px;
+    padding-left: 10px; 
+    font-family: var(--font-family);
+    font-size: 1.1vw;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    font-family: "Gilroy ExtraBold";
+}
+
+.button {
+    border-radius: 20px;
+    color: #333333;
+    padding: 10px 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-family: "Gilroy Extra Bold";
+    font-size: 1.1vw;
+    height: 84%;
+	width: 33%;
+    margin: 0 5%;
+    align-self: flex-end;
+}
+
+.button-n {
+    border-radius: 20px;
+    color: #333333;
+    padding: 10px 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-family: "Gilroy Extra Bold";
+    font-size: 1.1vw;
+    height: 84%;
+	width: 33%;
+    background-color: #00CCCC;
+    margin: 0 5%;
+    align-self: flex-end;
+}

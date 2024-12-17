@@ -129,3 +129,184 @@ body {
     text-align: center;
     line-height: 1.6; /* Увеличено межстрочное расстояние внутри текста задач */
 }
+
+footer {
+	top: var(--footer-top);
+	position: absolute;
+	background-color: #111;
+	padding: 0 0;
+	width: 100vw;
+	height: 50%;
+	display: block;
+	row-gap: 1vh;
+}
+
+.ft-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #333;
+}
+
+.ft-content>* {
+	margin: 0vh 4vw;
+}
+
+.ft-content>h1 {
+	margin-top: 9vh;
+	margin-bottom: 9vh;
+}
+
+.ft-tbl {
+	text-align: center;
+	display: block;
+}
+
+.ft-tbl>h2 {
+	font-family: "Gilroy Light";
+}
+
+.ft-cols {
+	display: flex;
+	flex-direction: row;
+	vertical-align: middle;
+	column-gap: 14vw;
+	transform: translateX(-2vw);
+}
+
+.ft-col {
+	font-size: calc(1vw + 0.7vh);
+	text-align: center;
+}
+
+.ft-col>a {
+	font-family: "Gilroy Light";
+	text-decoration: none;
+}
+
+.ft-col>h2::after {
+	content: '';
+	display: block;
+	background-color: white;
+	height: 1px;
+	transform: scaleX(1.5);
+}
+
+.ft-col>div>a>img {
+	width: calc(2vw + 1vh);
+	height: calc(2vw + 1vh);
+}
+
+.ft-btm {
+	background-color: #111;
+	height: 1vh;
+	align-items: center;
+	vertical-align: center;
+}
+
+.ft-btm>* {
+	padding: 2vh 2vw;
+	font-family: "Gilroy Light";
+	margin: 0px 0px;
+}
+:root {
+	--page-width: 100%;
+	--page-height: 100%;
+
+	/* nav */
+	--nav-width: 20.07vw;
+	--nav-min-width: var(--nav-width);
+
+	/* nav btn */
+	--nav-btn-img-width: 1.4vw;
+	--nav-btn-img-height: 1.4vw;
+	--nav-btn-font-size: 2vw;
+	--nav-btn-height: 9vw;
+	--nav-btn-max-height: 10vh;
+	--nav-btn-padding-left: 2vw;
+	--nav-btn-padding-right: 4px;
+
+	/* nav title */
+	--nav-title-line-height: calc(2vh + 2vw);
+	--nav-title-font-size: calc(2vh + 2vw);
+
+	/* content */
+	--content-left: var(--nav-width);
+	--content-left-margin: 4.604vw;
+	--content-width: 71vw;
+	--content-vert-margin: 1vh;
+
+	/* quote */
+	--quote-font-size: calc(0.7vh + 0.8vw);
+	--quote-line-height: calc(var(--quote-font-size) * 1.8);
+	--quote-border-radius: 20px;
+
+	/* quote content */
+	--quote-content-horz-margin: 2vw;
+
+	/* quote author */
+	--quote-author-horz-padding: 8vw;
+	--quote-author-vert-padding: 4vh;
+
+	/* task container */
+	--task-container-width: 65vw;
+	--task-container-vert-margin: 1vh;
+	--task-container-column-gap: 1vw;
+
+	/* task */
+	--task-min-width: 10vw;
+	--task-min-height: var(--task-min-width);
+	--task-font-size: calc(0.6vh + 0.7vw);
+
+	/* task header */
+	--task-header-margin-horz: 1.5vh;
+	--task-header-margin-vert: 1.5vh;
+
+	/* task content */
+	--task-content-margin-horz: var(--task-header-margin-horz);
+	--task-content-margin-vert: var(--task-header-margin-vert);
+
+	/* task span img */
+	--task-span-img-size: calc(5vw + 5vh);
+	--task-span-img-margin: 5px;
+
+	/* news switcher */
+	--news-switcher-width: 10px;
+	--news-switcher-height: calc(110vh + 20vw);
+	--news-switcher-horz-margin: 1vw;
+	--news-switcher-border-radius: 20px;
+
+	/* news switcher btn */
+	--news-switcher-btn-width: 10px;
+	--news-switcher-btn-height: 5vh;
+	--news-switcher-btn-border-radius: 20px;
+
+	/* back btn */
+	--back-btn-border-radius: 20px;
+	--back-btn-margin-bottom: 2vh;
+	--back-btn-width: 24vw;
+	--back-btn-child-horz-padding: 1vw;
+	--back-btn-img-horz-size: calc(2vw + 1vh);
+
+	/* footer */
+	--footer-width: 100vw;
+	--footer-height: 30vh;
+	--footer-top: 110vh;
+	--footer-left: var(--nav-width);
+}
+.nav-title {
+	line-height: var(--nav-title-line-height);
+	font-size: var(--nav-title-font-size);
+}
+.nav {
+	left: 0;
+	top: 0;
+	position: fixed;
+	display: inline-block;
+	background-color: #333;
+	width: var(--nav-width);
+	min-height: var(--page-height);
+	min-width: var(--nav-min-width);
+	text-align: center;
+	flex-direction: column;
+}

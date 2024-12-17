@@ -268,6 +268,13 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .container{
     position: relative;
+	display: grid;
+  	grid-auto-flow: column;
+	height: 70vh;
+    width: 62vw;
+    margin: 9vh 2vw 2vh 0;
+    background-color: #333;
+    border-radius: 2vh;
     margin: 2.8vh 1.5vw 1.5vh 1.5vw;
 }
 
@@ -333,6 +340,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin: 12.2vh 1.5vw 3.7vh 1.5vw;
 }
 
+
 .item{
 	border-radius: 20px;
 	font-family: "Gilroy Light";
@@ -347,15 +355,166 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .item1{
     width: 7vw;
+	position: relative;
 }
 
-.item1 p{
-    color: #fff;
-    margin: 1vh 1.5vw;
+.item1 input{
+	height: 100%;
+	width: 7vw;
+	position: absolute;
+	background: none;
+	border: solid #fff;
+	border-radius: 20px;
+    padding: auto;
+	margin: -0.4vh -0.25vw;
+	color: #fff;
+	font-size: 3vh;
 }
 
 .item2{
     width: 10vw;
+	position: relative;
+}
+
+.item2 input{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: none;
+	border: solid #fff;
+	border-radius: 20px;
+    padding: auto;
+	margin: -0.4vh -0.25vw;
+	color: #fff;
+	font-size: 3vh;
+}
+
+.item3{
+    width: 46vw;
+	position: relative;
+}
+
+.item3 input{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: none;
+	border: solid #fff;
+	border-radius: 20px;
+    padding: auto;
+	margin: -0.4vh -0.25vw;
+	color: #fff;
+	font-size: 3vh;
+}
+
+.add_and_save_block{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+    margin: 36.4815vh 1.5vw 28vh 1.5vw;
+}
+
+.add_files{
+	position: relative;
+	height: 5.7vh;
+	width: 15.5vw;
+	background: rgba(0, 255, 204, 0.5);
+	border-radius: 20px;
+    padding: auto;
+	color: #fff;
+	font-size: 3vh;
+	cursor:pointer;
+}
+
+.add_files p{
+	margin: 1vh 1.6vw;
+}
+
+.add_files::before{
+	content: "";
+	background-image: url(../images/Icon\ \(1\).png);
+	background-repeat: no-repeat;
+	width: 2.234vw;
+	height: 2.494vw;;
+	position: absolute;
+	margin: 0.752vh 0px 1.852vh 16.039vw;
+
+}
+
+.add_files::after{
+	content: "";
+	background-image: url(../images/Icon\ \(2\).png);
+	background-repeat: no-repeat;
+	width: 2.234vw;
+	height: 2.494vw;;
+	position: absolute;
+	margin: -4.2vh 0px 1.852vh 19.039vw;
+
+}
+
+.save_files{
+	position: relative;
+	height: 5.7vh;
+	width: 19vw;
+	background: rgba(0, 255, 204, 0.5);
+	border-radius: 20px;
+    padding: auto;
+	color: #fff;
+	font-size: 3vh;
+	margin: 0 0 0 24vw;
+	cursor:pointer;
+}
+
+.save_files p{
+	margin: 1vh 2.9vw;
+}
+
+.save_files::before{
+	content: "";
+	background-image: url(../images/Icon\ \(3\).png);
+	background-repeat: no-repeat;
+	width: 2.234vw;
+	height: 2.494vw;;
+	position: absolute;
+	margin: 0.852vh 0px 1.852vh 0.5vw;
+
+}
+
+.textfield{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	background: rgba(0, 255, 204, 0.5);
+	margin: 51vh 1.5vw 2.7vh 1.5vw;
+	border-radius: 2vh;
+}
+
+.textfield textarea{
+	display: block;
+	height: 15.5vh;
+	width: 58.7vw;
+	background: rgba(0, 255, 204, 0.5);
+	border-radius: 2vh;
+	font-size: 3vh;
+}
+
+.send_task{
+	width: 24.5vw;
+	height: 7.5vh;
+	background: #333;
+	border-radius: 2vh;
+	margin: -15vh 20vw;
+	cursor: pointer;
+}
+
+.send_task_text{
+	margin: -1.5vh 5.5vw -1vh;
+}
+
+.send_task p{
+	font-family: "Gilroy Light";
+	font-weight: 400 !important;
+	font-size: 3vh;
 }
 
 footer {

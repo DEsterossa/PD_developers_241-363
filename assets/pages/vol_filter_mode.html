@@ -8,23 +8,23 @@
 	<body>
 		<div class="nav">
 			<h1 class="nav-title">Точка<br/>Опоры</h1>
-			<a class="nav-btn" href="#"><img src="../images/main.svg"/><h1>Главная</h1></a>
-			<a class="nav-btn" href="#"><img src="../images/profile.svg"/><h1>Профиль</h1></a>
+			<a class="nav-btn" href="../../index.html"><img src="../images/main.svg"/><h1>Главная</h1></a>
+			<a class="nav-btn" href="./profile.html"><img src="../images/profile.svg"/><h1>Профиль</h1></a>
 			<a class="nav-btn nav-cur-tab" href="#"><img src="../images/tasks.svg"/><h1>Задачи</h1></a>
 			<a class="nav-btn" href="./chat.html"><img src="../images/chat.svg"/><h1>Чат</h1></a>
-			<a class="nav-btn" href="#"><img src="../images/settings.svg"/><h1>Настройки</h1></a>
-			<a class="nav-btn" href="#"><img src="../images/help.svg"/><h1>Помощь</h1></a>
+			<a class="nav-btn" href="./settings-account-volo.html"><img src="../images/settings.svg"/><h1>Настройки</h1></a>
+			<a class="nav-btn" href="./index51.html"><img src="../images/help.svg"/><h1>Помощь</h1></a>
 		</div>
 		<div class="content">
 			<div class="header">
 				<div class="search">				
-					<form>
-						<input type="text"  maxlength="26" placeholder="Поиск...">
+					<form action="./tasks_search.html">
+						<input id="search_pararm" type="text" maxlength="26" placeholder="Поиск...">
 						<button type="submit"></button>
 					  </form>				 
 				</div>
-				<div class="notifications"></div>
-				<div class="archive"></div>
+				<div class="notifications" onclick="location.href = './tasks_notifi_Volo.html';"></div>
+				<div class="archive" onclick="location.href = './find_mode.html';"></div>
 			</div>
 			<div class="filter">
 				<div class="filter_back">
@@ -79,8 +79,8 @@
 						<div class="ft-col">
 							<h2>Соц. сети</h2>
 							<div style="flex-direction: row;">
-								<a href="#"><img src="assets/images/vkontakte.svg"/></a>
-								<a href="#"><img src="assets/images/telegram.svg"/></a>
+								<a href="#"><img src="../images/vkontakte.svg"/></a>
+								<a href="#"><img src="../images/telegram.svg"/></a>
 							</div>
 						</div>
 					</div>

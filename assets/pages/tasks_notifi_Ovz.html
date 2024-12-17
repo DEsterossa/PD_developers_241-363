@@ -15,16 +15,12 @@
             <span>Опоры</span>
         </div>
         <ul>
-            <li><a href="#"><i class="fa fa-home"></i> Главная</a></li>
-            <li><a href="#"><img src="../images/profile.svg" alt="Профиль" style="width: 26px; height: 26px; margin-right: 15px; vertical-align: middle;"> Профиль</a></li>
-
-            <li class="active"><a href="#"><img src="../images/tasks.svg" alt="Задачи" style="width: 26px; height: 26px; margin-right: 15px; vertical-align: middle;"> Задачи</a></li>
-
+            <li><a href="../../index.html"><i class="fa fa-home"></i>Главная</a></li>
+            <li><a href="./profile.html"><img src="../images/profile.svg" alt="Профиль" style="width: 26px; height: 26px; margin-right: 15px; vertical-align: middle;"> Профиль</a></li>
+            <li class="active"><a href="./your_task_ovz.html"><img src="../images/tasks.svg" alt="Задачи" style="width: 26px; height: 26px; margin-right: 15px; vertical-align: middle;"> Задачи</a></li>
             <li><a href="./chat.html"><img src="../images/chat.svg" alt="Чат" style="width: 26px; height: 26px; margin-right: 15px; vertical-align: middle;"> Чат</a></li>
-
-            <li><a href="#"><img src="../images/settings.svg" alt="Настройки" style="width: 26px; height: 26px; margin-right: 15px; vertical-align: middle;"> Настройки</a></li>
-
-            <li><a href="#"><i class="fa fa-question-circle"></i> Поддержка</a></li>
+            <li><a href="./settings-account-ovz.html"><img src="../images/settings.svg" alt="Настройки" style="width: 26px; height: 26px; margin-right: 15px; vertical-align: middle;"> Настройки</a></li>
+            <li><a href="./index51.html"><i class="fa fa-question-circle"></i>Поддержка</a></li>
         </ul>
     </div>
 
@@ -32,13 +28,13 @@
     <div class="main-content">
         <!-- Верхняя панель -->
         <div class="top-bar">
-            <button class="create-task"><i class="fa fa-plus"></i> Создать задачу</button>
+            <button class="create-task" onclick="location.href = './create_task_ovz.html';"><i class="fa fa-plus"></i> Создать задачу</button>
             <div class="actions">
                 <button><img src="../images/Bell.png" alt="Уведомления" style="width: 24px; height: 24px; vertical-align: middle;"></button>
 
-                <button><img src="../images/Archive.png" alt="Archive" style="width: 24px; height: 24px; vertical-align: middle;"></button>
+                <button onclick="window.location.href='./find_mode.html'"><img src="../images/Archive.png" alt="Archive" style="width: 24px; height: 24px; vertical-align: middle;"></button>
 
-                <button><i class="fa fa-trash"></i></button>
+                <button onclick="window.location.href='./tasks_delete.html'"><i class="fa fa-trash"></i></button>
             </div>
         </div>
 
@@ -66,5 +62,35 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="ft-content">
+            <h1 class="nav-title">Точка<br/>Опоры</h1>
+            <div class="ft-tbl">
+                <div class="ft-cols">
+                    <div class="ft-col">
+                        <h2>Помощь</h2>
+                        <a href="#">Обратная связь</a><br/>
+                        <a href="#">Техническая поддержка</a>
+                    </div>
+                    <div class="ft-col">
+                        <h2>Контакты</h2>
+                        <a href="#">+7 (900) 800-70-00</a><br/>
+                        <a href="#">example@mail.ru</a>
+                    </div>
+                    <div class="ft-col">
+                        <h2>Соц. сети</h2>
+                        <div style="flex-direction: row;">
+                            <a href="#"><img src="../images/vkontakte.svg"/></a>
+                            <a href="#"><img src="../images/telegram.svg"/></a>
+                        </div>
+                    </div>
+                </div>
+                <h2>График работы: ежедневно 9:00-18:00</h2>
+            </div>
+        </div>
+        <div class="ft-btm">
+            <h3>© "Точка опоры" - г.Москва, 2024</h3>
+        </div>
+    </footer>
 </body>
 </html>
