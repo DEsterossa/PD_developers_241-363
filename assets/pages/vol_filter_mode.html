@@ -18,13 +18,13 @@
 		<div class="content">
 			<div class="header">
 				<div class="search">				
-					<form>
-						<input type="text"  maxlength="26" placeholder="Поиск...">
+					<form action="./tasks_search.html">
+						<input id="search_pararm" type="text" maxlength="26" placeholder="Поиск...">
 						<button type="submit"></button>
 					  </form>				 
 				</div>
-				<div class="notifications"></div>
-				<div class="archive"></div>
+				<div class="notifications" onclick="location.href = './tasks_notifi_Volo.html';"></div>
+				<div class="archive" onclick="location.href = './find_mode.html';"></div>
 			</div>
 			<div class="filter">
 				<div class="filter_back">
@@ -79,8 +79,8 @@
 						<div class="ft-col">
 							<h2>Соц. сети</h2>
 							<div style="flex-direction: row;">
-								<a href="#"><img src="assets/images/vkontakte.svg"/></a>
-								<a href="#"><img src="assets/images/telegram.svg"/></a>
+								<a href="#"><img src="../images/vkontakte.svg"/></a>
+								<a href="#"><img src="../images/telegram.svg"/></a>
 							</div>
 						</div>
 					</div>
